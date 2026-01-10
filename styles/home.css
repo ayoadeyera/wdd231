@@ -1,0 +1,78 @@
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Pushes logo to left, hamburger to right */
+    padding: 1rem 2rem;
+    background-color: #002147;
+    /* Example Dark Blue */
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Navigation - Mobile First */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: none;
+    /* Hidden by default on mobile */
+    flex-direction: column;
+}
+
+nav ul.show {
+    display: flex;
+    /* Shown when toggled by JS */
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+/* Wayfinding - highlight active link */
+nav li.active a {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffcc00;
+}
+
+/* Desktop View */
+@media (min-width: 600px) {
+    #menu {
+        display: none;
+        /* Hide hamburger */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav a {
+        border-bottom: none;
+        padding: 1rem 2rem;
+    }
+}

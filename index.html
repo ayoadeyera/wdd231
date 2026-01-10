@@ -4,11 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="normalize.css">
-    <title>Document</title>
+    <meta name="description" content="Chamber of Commerce Website.">
+    <title>The Chamber of Commerce</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles/home.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/main.js" defer></script>
 </head>
 
 <body>
+
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.svg" alt="Site Logo" id="logo" width="50" height="50">
+            <span>Solomon Chamber of Commerce</span>
+        </div>
+        <button id="menu" title="Open Menu">&#9776;</button>
+    </header>
+
+    <nav>
+        <ul id="animate-me">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <section class="card">
+            <h2>Course Work</h2>
+            <div class="filter-buttons">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div id="course-list">
+            </div>
+            <p>Total Credits: <span id="total-credits">0</span></p>
+        </section>
+
+        <section class="card">
+            <h2>About Me</h2>
+            <p>Information about your location or background goes here.</p>
+        </section>
+
+        <section class="card">
+            <h2>Connect</h2>
+            <p>Details for reaching out or other course-related info.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com" target="_blank">GitHub</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> | Solomon Adeyera | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
 
 </body>
 
