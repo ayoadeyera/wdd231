@@ -1,0 +1,21 @@
+/* --- 7. DESKTOP MEDIA QUERIES --- */
+@media (min-width: 768px) {
+    #menu {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    main {
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+    }
+
+    .courses-card {
+        grid-column: 1 / -1;
+    }
+}

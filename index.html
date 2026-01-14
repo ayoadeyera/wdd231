@@ -4,29 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chamber of Commerce Website.">
-    <title>The Chamber of Commerce</title>
+    <title>Solomon Chamber of Commerce</title>
+    <meta name="description" content="Chamber of Commerce Website for WDD 231.">
+    <meta name="author" content="Ayodeji Solomon Adeyera">
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
 
-    <!-- JavaScript -->
-    <script src="scripts/main.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 
 <body>
-
     <header>
         <div class="logo-container">
             <img src="images/logo.svg" alt="Site Logo" id="logo" width="50" height="50">
-            <span>Solomon Chamber of Commerce</span>
+            <span>Solomon Adeyera</span>
         </div>
         <button id="menu" title="Open Menu">&#9776;</button>
     </header>
@@ -34,46 +35,63 @@
     <nav>
         <ul id="animate-me">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Chamber Project</a></li>
             <li><a href="#">Final Project</a></li>
         </ul>
     </nav>
 
     <main>
-        <h1>Home</h1>
+        <h1 class="page-title">Home</h1>
 
-        <section class="card">
-            <h2>Course Work</h2>
+        <section class="card info-card">
+            <h2 class="card-header">About Me</h2>
+            <div class="card-content">
+                <p>I am a passionate Developer dedicated to building digital experiences
+                    that are as functional as they are beautiful. My professional philosophy is rooted in the belief
+                    that great software isn't just about code—it's about creating meaningful solutions that bridge the
+                    gap between human needs and technical possibilities. <br>
+
+                    With a strong foundation in Data Analysis, I bring a unique, logic-driven perspective to frontend
+                    development. This analytical background allows me to go beyond aesthetics; I ensure that every
+                    design decision and line of code is backed by user data, performance metrics, and accessibility
+                    standards.<br>
+                    I am always looking for new challenges that allow me to push the boundaries of web development and
+                    contribute to projects that make a lasting impact.</p>
+            </div>
+        </section>
+
+        <section class="card photo-card">
+            <h2 class="card-header">Student Photo</h2>
+            <div class="card-content photo-placeholder">
+                <img src="images/profile.png" alt="Student Photo" loading="lazy" width="400" height="300">
+            </div>
+        </section>
+
+        <section class="card courses-card">
+            <h2 class="card-header">Web Certificate Courses</h2>
             <div class="filter-buttons">
                 <button id="all">All</button>
                 <button id="cse">CSE</button>
                 <button id="wdd">WDD</button>
             </div>
-            <div id="course-list">
-            </div>
-            <p>Total Credits: <span id="total-credits">0</span></p>
-        </section>
-
-        <section class="card">
-            <h2>About Me</h2>
-            <p>Information about your location or background goes here.</p>
-        </section>
-
-        <section class="card">
-            <h2>Connect</h2>
-            <p>Details for reaching out or other course-related info.</p>
+            <div id="course-list"></div>
+            <p class="credit-total">The total credits for courses listed above is <span id="total-credits">0</span></p>
         </section>
     </main>
 
     <footer>
-        <div class="social">
-            <a href="https://github.com" target="_blank">GitHub</a>
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/solomonadeyera/" target="_blank"><img src="images/linkedin.svg"
+                    alt="LinkedIn"></a>
+            <a href="http://github.com/ayoadeyera/wdd231" target="_blank"><img src="images/github.svg" alt="GitHub"></a>
+            <a href="#"><img src="images/x.svg" alt="X"></a>
+            <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
         </div>
-        <p>&copy; <span id="currentyear"></span> | Solomon Adeyera | Nigeria</p>
+        <p>&copy; <span id="currentyear"></span> 🌺 Ayodeji Solomon Adeyera 🌺| Osogbo, Nigeria </p>
         <p id="lastModified"></p>
     </footer>
 
+    <dialog id="course-details"></dialog>
 </body>
 
 </html>
