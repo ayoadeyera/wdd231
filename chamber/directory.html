@@ -1,30 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Summit Valley Chamber of Commerce | Business Growth & Community</title>
-    <meta name="description" content="Connect with the Summit Valley Chamber of Commerce. We provide local business resources, advocacy, networking events, and economic growth opportunities for the region.">
+    <meta name="description"
+        content="Connect with the Summit Valley Chamber of Commerce. We provide local business resources, advocacy, networking events, and economic growth opportunities for the region.">
     <meta name="author" content="Ayodeji Solomon Adeyera">
 
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://ayoadeyera.github.io/wdd231/chamber">
-    <meta property="og:title" content="Summit Valley Chamber of Commerce | Business Growth & Community">
-    <meta property="og:description" content="Connect with the Summit Valley Chamber of Commerce. We provide local business resources, advocacy, networking events, and economic growth opportunities for the region.">
+    <meta property="og:url" content="https://www.summitvalleychamber.com/">
+    <meta property="og:title" content="Summit Valley Chamber of Commerce">
+    <meta property="og:description"
+        content="Join the Summit Valley Chamber to grow your business and connect with the community.">
     <meta property="og:image" content="https://www.summitvalleychamber.com/images/social-share-preview.jpg">
 
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="http://ayoadeyera.github.io/wdd231/chamber">
-    <meta property="twitter:title" content="Summit Valley Chamber of Commerce | Business Growth & Community">
-    <meta property="twitter:description" content="Connect with the Summit Valley Chamber of Commerce. We provide local business resources, advocacy, networking events, and economic growth opportunities for the region.">
-    <meta property="twitter:image" content="https://www.summitvalleychamber.com/images/social-share-preview.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
 
-    
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <link rel="stylesheet" href="styles/small.css">
+
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 
 <body>
-    
+
+    <header>
+        <div class="header-content">
+            <img src="images/logo.webp" alt="Summit Valley Chamber of Commerce Logo" width="80" height="80">
+            <h1>Summit Valley Chamber of Commerce</h1>
+        </div>
+        <button id="menu-button" aria-label="Open Menu"></button>
+    </header>
+
+    <nav>
+        <ul id="menu-list">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+                <source media="(min-width: 500px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-small.webp" alt="Busy Summit Valley Business District" width="500" height="300">
+            </picture>
+            <div class="hero-text">
+                <h2>Empowering Business in Summit Valley</h2>
+                <p>Join us to grow your network and influence the local economy.</p>
+                <a href="join.html" class="cta-btn">Become a Member</a>
+            </div>
+        </div>
+
+        <div class="home-grid">
+            <section class="card">
+                <h3>Upcoming Events</h3>
+                <p>Networking Mixer - Oct 24th</p>
+            </section>
+            <section class="card">
+                <h3>Business Directory</h3>
+                <p>Find trusted local partners.</p>
+            </section>
+            <section class="card">
+                <h3>Weather</h3>
+                <p>Current Conditions in Summit Valley</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentYear"></span> Summit Valley Chamber of Commerce
+        </p>
+        <p>
+            Ayodeji Solomon Adeyera | WDD 231 Class Project
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+
 </body>
+
 </html>

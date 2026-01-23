@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Summit Logistics International",
+        "address": "123 Industrial Pkwy, Summit Valley, CA 96001",
+        "phone": "(530) 555-0101",
+        "website": "https://www.summitlogistics.test",
+        "image": "images/member-1.webp",
+        "membership_level": "Platinum",
+        "other_info": "Global freight and supply chain solutions since 1995."
+    },
+    {
+        "name": "Valley Grind Coffee Roasters",
+        "address": "45 Main Street, Summit Valley, CA 96002",
+        "phone": "(530) 555-0102",
+        "website": "https://www.valleygrind.test",
+        "image": "images/member-2.webp",
+        "membership_level": "Silver",
+        "other_info": "Artisan coffee shop and bakery. Free Wifi for members."
+    },
+    {
+        "name": "BuildRight Construction",
+        "address": "880 Boulder Drive, Summit Valley, CA 96001",
+        "phone": "(530) 555-0103",
+        "website": "https://www.buildright.test",
+        "image": "images/member-3.webp",
+        "membership_level": "Gold",
+        "other_info": "Residential and commercial renovation specialists."
+    },
+    {
+        "name": "TechStart Incubator",
+        "address": "200 Innovation Way, Suite 4, Summit Valley, CA 96003",
+        "phone": "(530) 555-0104",
+        "website": "https://www.techstart.test",
+        "image": "images/member-4.webp",
+        "membership_level": "Gold",
+        "other_info": "Co-working space and mentorship for local startups."
+    },
+    {
+        "name": "Summit Valley Florist",
+        "address": "12 Garden Lane, Summit Valley, CA 96002",
+        "phone": "(530) 555-0105",
+        "website": "https://www.summitflorist.test",
+        "image": "images/member-5.webp",
+        "membership_level": "Silver",
+        "other_info": "Fresh arrangements for corporate events and weddings."
+    },
+    {
+        "name": "Pinnacle Financial Group",
+        "address": "101 Market St, Floor 5, Summit Valley, CA 96001",
+        "phone": "(530) 555-0106",
+        "website": "https://www.pinnaclefin.test",
+        "image": "images/member-6.webp",
+        "membership_level": "Platinum",
+        "other_info": "Wealth management and business tax services."
+    },
+    {
+        "name": "GreenLeaf Landscaping",
+        "address": "77 Oak Avenue, Summit Valley, CA 96004",
+        "phone": "(530) 555-0107",
+        "website": "https://www.greenleaf.test",
+        "image": "images/member-7.webp",
+        "membership_level": "Gold",
+        "other_info": "Eco-friendly landscape design and maintenance."
+    }
+]

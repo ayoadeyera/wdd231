@@ -1,0 +1,97 @@
+:root {
+    /* Color Palette based on Site Plan  */
+    --primary-color: #002147;
+    /* Deep Blue */
+    --secondary-color: #ffcc00;
+    /* Gold/Yellow */
+    --accent-color: #8b0000;
+    /* Dark Red */
+    --text-color: #333333;
+    /* Dark Gray */
+    --light-bg: #f4f4f4;
+    /* Light Background */
+    --card-bg: #e0e0e0;
+    /* Card Background */
+    --white: #ffffff;
+    /* Pure White */
+
+    /* Typography based on Site Plan [cite: 54] */
+    --heading-font: 'Noto Serif', serif;
+    --body-font: 'Noto Sans', sans-serif;
+}
+
+/* Base Settings */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--light-bg);
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* Mobile Layout (Default)  */
+header,
+nav,
+main,
+footer {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* Stacked for mobile */
+}
+
+nav a {
+    display: block;
+    padding: 0.75rem;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 0.2rem;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Footer Requirements [cite: 75, 76] */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
