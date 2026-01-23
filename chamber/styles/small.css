@@ -95,3 +95,77 @@ footer {
 footer p {
     margin: 0.5rem 0;
 }
+
+
+
+/* --- DIRECTORY PAGE STYLES --- */
+.directory-header {
+    text-align: center;
+    padding: 1rem;
+}
+
+.menu-controls {
+    margin: 1rem 0;
+}
+
+.menu-controls button {
+    padding: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: var(--white);
+    border: 1px solid var(--text-color);
+    margin: 0 0.5rem;
+}
+
+.menu-controls button:hover {
+    background-color: var(--card-bg);
+}
+
+.menu-controls button.active {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* Default Mobile Card Style */
+#members section {
+    background-color: var(--card-bg);
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#members section img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* List View Overrides (Applied when JS adds the 'list' class) */
+.list section {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 1rem;
+    padding: 0.5rem;
+    background-color: var(--white);
+}
+
+.list section:nth-child(even) {
+    background-color: var(--light-bg);
+    /* Zebra striping for lists */
+}
+
+/* Hide images in list view per Site Plan requirement */
+.list section img {
+    display: none;
+}
+
+/* Setup Grid Layout via CSS Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 1rem;
+}
