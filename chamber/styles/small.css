@@ -176,6 +176,7 @@ footer p {
 /* Social icons */
 .social-icons {
     margin-bottom: 10px;
+    padding-top: 10px;
 }
 
 .social-icons img {
