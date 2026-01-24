@@ -91,14 +91,29 @@ nav a:hover {
 /* Footer */
 footer {
     background-color: var(--primary-color);
+    /* Deep Indigo */
     color: var(--white);
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
 }
 
-footer p {
-    margin: 0.5rem 0;
+.footer-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.footer-section h3 {
+    margin-top: 0;
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+}
+
+.footer-section p {
+    margin: 0.3rem 0;
 }
 
 /* Directory page */
@@ -175,12 +190,17 @@ footer p {
 
 /* Social icons */
 .social-icons {
-    margin-bottom: 10px;
-    padding-top: 10px;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
 }
 
 .social-icons img {
     width: 30px;
     height: 30px;
-    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
 }

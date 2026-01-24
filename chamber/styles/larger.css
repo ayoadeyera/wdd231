@@ -133,3 +133,31 @@
         /* hide images in list view */
     }
 }
+
+/* --- FOOTER LAYOUT (Desktop) --- */
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Three equal columns */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 1rem;
+}
+
+/* Contact Info */
+.contact-info {
+    text-align: left;
+}
+
+/* Social Icons */
+.social-icons {
+    justify-content: center;
+}
+
+/* Dev Info */
+.dev-info {
+    text-align: left;
+    padding-left: 2rem;
+}
