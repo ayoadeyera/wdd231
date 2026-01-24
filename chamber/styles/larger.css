@@ -7,8 +7,10 @@
     /* Limits the width so content doesn't stretch endlessly on huge screens */
     body {
         max-width: 1200px;
-        margin: 0 auto; /* Centers the body on the screen */
-        border: 1px solid #ccc; /* Optional: Defines the edge of the content */
+        margin: 0 auto;
+        /* Centers the body on the screen */
+        border: 1px solid #ccc;
+        /* Optional: Defines the edge of the content */
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
@@ -32,11 +34,13 @@
     }
 
     nav ul {
-        display: flex; /* Makes the list horizontal */
+        display: flex;
+        /* Makes the list horizontal */
         flex-direction: row;
         justify-content: flex-end;
         gap: 1rem;
-        background-color: transparent; /* Removes mobile background */
+        background-color: transparent;
+        /* Removes mobile background */
     }
 
     nav a {
@@ -50,10 +54,12 @@
 
     /* Hover effect: Gold text with a Deep Blue underline */
     nav a:hover {
-        color: var(--secondary-color); /* Gold */
+        color: var(--secondary-color);
+        /* Gold */
         background-color: transparent;
         text-decoration: underline;
-        text-decoration-color: var(--primary-color); /* Deep Blue */
+        text-decoration-color: var(--primary-color);
+        /* Deep Blue */
         text-decoration-thickness: 3px;
     }
 
@@ -73,11 +79,14 @@
         position: absolute;
         top: 20%;
         left: 5%;
-        background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+        background-color: rgba(255, 255, 255, 0.9);
+        /* Semi-transparent white */
         padding: 2rem;
-        width: 40%; /* Text box takes up 40% of image width */
-        border-left: 5px solid var(--secondary-color); /* Gold accent bar */
-        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        width: 40%;
+        /* Text box takes up 40% of image width */
+        border-left: 5px solid var(--secondary-color);
+        /* Gold accent bar */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
     .hero-text h2 {
@@ -89,22 +98,24 @@
     /* Turns the stacked cards into a 3-column row */
     .home-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 equal columns */
         gap: 20px;
         padding: 2rem;
     }
 
     .card {
-        height: 100%; /* Ensures all cards are same height */
+        height: 100%;
+        /* Ensures all cards are same height */
         background-color: var(--white);
         border: 1px solid #ddd;
         padding: 1.5rem;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
     /* --- DIRECTORY GRID/LIST SUPPORT --- */
     /* These classes support the directory page toggle requirement */
-    
+
     /* The Grid View (Default) */
     .directory-grid {
         display: grid;
@@ -121,13 +132,15 @@
 
     .directory-list section {
         display: grid;
-        grid-template-columns: 2fr 1fr 1fr; /* Name | Phone | Website */
+        grid-template-columns: 2fr 1fr 1fr;
+        /* Name | Phone | Website */
         align-items: center;
         padding: 0.5rem;
         border-bottom: 1px solid #ccc;
     }
-    
+
     .directory-list img {
-        display: none; /* Hide images in list view as per requirements */
+        display: none;
+        /* Hide images in list view as per requirements */
     }
 }
