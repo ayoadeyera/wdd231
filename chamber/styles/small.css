@@ -1,33 +1,31 @@
 :root {
-    /* Osun Chamber of Commerce - Cultural Palette */
+    /* Color Palette */
 
-    /* Primary: Deep Indigo (Represents 'Aro' Adire heritage) */
+    /* Main color: Deep Indigo */
     --primary-color: #2E1A47;
 
-    /* Secondary: Osun Gold (Represents Mineral Wealth) */
-    /* Previous yellow was #ffcc00; this is more metallic/regal */
+    /* Secondary color: Gold */
     --secondary-color: #F7D36F;
 
-    /* Accent: Ruby Red (Represents 'Alaari' Nobility) */
+    /* Accent color: Ruby Red */
     --accent-color: #8b0000;
 
-    /* Alternative Accent: Cocoa Brown (Use this if you prefer an Agricultural focus)
-       --accent-color: #8B4513; 
-    */
+    /* Optional accent: Cocoa Brown */
+    /* --accent-color: #8B4513; */
 
-    /* Neutrals */
+    /* Neutral colors */
     --text-color: #333333;
     --light-bg: #f9f7f2;
-    /* Slight warm tint to match gold */
+    /* Warm tint background */
     --card-bg: #ffffff;
     --white: #ffffff;
 
-    /* Typography */
+    /* Fonts */
     --heading-font: 'Noto Serif', serif;
     --body-font: 'Noto Sans', sans-serif;
 }
 
-/* Base Settings */
+/* Base setup */
 html {
     box-sizing: border-box;
 }
@@ -55,7 +53,7 @@ h6 {
     color: var(--primary-color);
 }
 
-/* Mobile Layout (Default)  */
+/* Mobile layout */
 header,
 nav,
 main,
@@ -72,7 +70,7 @@ nav ul {
     margin: 0;
     display: flex;
     flex-direction: column;
-    /* Stacked for mobile */
+    /* stacked on mobile */
 }
 
 nav a {
@@ -90,7 +88,7 @@ nav a:hover {
     color: var(--primary-color);
 }
 
-/* Footer Requirements [cite: 75, 76] */
+/* Footer */
 footer {
     background-color: var(--primary-color);
     color: var(--white);
@@ -103,9 +101,7 @@ footer p {
     margin: 0.5rem 0;
 }
 
-
-
-/* --- DIRECTORY PAGE STYLES --- */
+/* Directory page */
 .directory-header {
     text-align: center;
     padding: 1rem;
@@ -133,7 +129,7 @@ footer p {
     color: var(--white);
 }
 
-/* Default Mobile Card Style */
+/* Member cards (mobile default) */
 #members section {
     background-color: var(--card-bg);
     border: 1px solid #ccc;
@@ -149,7 +145,7 @@ footer p {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-/* List View Overrides (Applied when JS adds the 'list' class) */
+/* List view (JS adds 'list' class) */
 .list section {
     display: flex;
     align-items: center;
@@ -161,15 +157,15 @@ footer p {
 
 .list section:nth-child(even) {
     background-color: var(--light-bg);
-    /* Zebra striping for lists */
+    /* striped rows */
 }
 
-/* Hide images in list view per Site Plan requirement */
 .list section img {
     display: none;
+    /* hide images in list view */
 }
 
-/* Setup Grid Layout via CSS Grid */
+/* Grid layout */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -177,6 +173,7 @@ footer p {
     padding: 1rem;
 }
 
+/* Social icons */
 .social-icons {
     margin-bottom: 10px;
 }

@@ -1,20 +1,17 @@
-/* Media Query for Desktop/Large Tablets 
-    Triggers when viewport is wider than 1000px (64rem)
-*/
+/* Desktop/Large Tablet styles (over 1000px wide) */
 @media (min-width: 64rem) {
 
-    /* --- LAYOUT CONTAINER --- */
-    /* Limits the width so content doesn't stretch endlessly on huge screens */
+    /* Layout */
     body {
         max-width: 1200px;
         margin: 0 auto;
-        /* Centers the body on the screen */
+        /* center content */
         border: 1px solid #ccc;
-        /* Optional: Defines the edge of the content */
+        /* outline */
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
-    /* --- HEADER & NAVIGATION --- */
+    /* Header & Navigation */
     header {
         display: flex;
         align-items: center;
@@ -22,12 +19,12 @@
         padding: 1rem 2rem;
     }
 
-    /* Hide the Hamburger Button on Desktop */
+    /* Hide menu button on desktop */
     #menu-button {
         display: none;
     }
 
-    /* Reset Navigation for Horizontal View */
+    /* Horizontal navigation */
     nav {
         background-color: transparent;
         margin-top: 0;
@@ -35,12 +32,12 @@
 
     nav ul {
         display: flex;
-        /* Makes the list horizontal */
+        /* horizontal list */
         flex-direction: row;
         justify-content: flex-end;
         gap: 1rem;
         background-color: transparent;
-        /* Removes mobile background */
+        /* no mobile background */
     }
 
     nav a {
@@ -52,19 +49,16 @@
         transition: color 0.3s ease;
     }
 
-    /* Hover effect: Gold text with a Deep Blue underline */
+    /* Hover: gold text + underline */
     nav a:hover {
         color: var(--secondary-color);
-        /* Gold */
         background-color: transparent;
         text-decoration: underline;
         text-decoration-color: var(--primary-color);
-        /* Deep Blue */
         text-decoration-thickness: 3px;
     }
 
-    /* --- MAIN HERO SECTION --- */
-    /* Create an overlay effect for the hero text */
+    /* Hero section */
     .hero {
         position: relative;
     }
@@ -80,12 +74,12 @@
         top: 20%;
         left: 5%;
         background-color: rgba(255, 255, 255, 0.9);
-        /* Semi-transparent white */
+        /* light overlay */
         padding: 2rem;
         width: 40%;
-        /* Text box takes up 40% of image width */
+        /* text box width */
         border-left: 5px solid var(--secondary-color);
-        /* Gold accent bar */
+        /* gold bar */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
@@ -94,29 +88,25 @@
         font-size: 2.5rem;
     }
 
-    /* --- HOME PAGE GRID --- */
-    /* Turns the stacked cards into a 3-column row */
+    /* Home page grid */
     .home-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        /* 3 equal columns */
+        /* 3 columns */
         gap: 20px;
         padding: 2rem;
     }
 
     .card {
         height: 100%;
-        /* Ensures all cards are same height */
+        /* equal height */
         background-color: var(--white);
         border: 1px solid #ddd;
         padding: 1.5rem;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
-    /* --- DIRECTORY GRID/LIST SUPPORT --- */
-    /* These classes support the directory page toggle requirement */
-
-    /* The Grid View (Default) */
+    /* Directory views */
     .directory-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -124,7 +114,6 @@
         padding: 1rem;
     }
 
-    /* The List View (Activated via JS) */
     .directory-list {
         display: flex;
         flex-direction: column;
@@ -133,7 +122,7 @@
     .directory-list section {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
-        /* Name | Phone | Website */
+        /* name | phone | site */
         align-items: center;
         padding: 0.5rem;
         border-bottom: 1px solid #ccc;
@@ -141,6 +130,6 @@
 
     .directory-list img {
         display: none;
-        /* Hide images in list view as per requirements */
+        /* hide images in list view */
     }
 }
