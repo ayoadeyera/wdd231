@@ -160,32 +160,24 @@ footer {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
+
+/* Website link */
 #members section a {
-    display: inline-block;
+    display: inline-block; 
     padding: 0.75rem 1.5rem;
     margin-top: 10px;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color); 
     color: var(--white);
     text-decoration: none;
     font-weight: 700;
-    border-radius: 5px;
+    border-radius: 5px; 
     border: 1px solid var(--primary-color);
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-#members section a:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    border-color: var(--secondary-color);
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
 
-#members section a:active {
-    transform: translateY(0);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+
 
 /* List view (JS adds 'list' class) */
 .list section {
@@ -239,30 +231,30 @@ footer {
 
 /* Website link */
 #members section a {
-    display: inline-block;
+    display: inline-block; 
     padding: 0.75rem 1.5rem;
     margin-top: 10px;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color); 
     color: var(--white);
     text-decoration: none;
     font-weight: 700;
-    border-radius: 5px;
+    border-radius: 5px; 
     border: 1px solid var(--primary-color);
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 /* Hover Effect */
 #members section a:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    background-color: var(--secondary-color); 
+    color: var(--primary-color); 
     border-color: var(--secondary-color);
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
 
 /* Active/Click Effect */
 #members section a:active {
-    transform: translateY(0);
+    transform: translateY(0); 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
