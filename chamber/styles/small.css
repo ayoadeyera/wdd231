@@ -1,21 +1,28 @@
 :root {
-    /* Color Palette based on Site Plan  */
-    --primary-color: #002147;
-    /* Deep Blue */
-    --secondary-color: #ffcc00;
-    /* Gold/Yellow */
-    --accent-color: #8b0000;
-    /* Dark Red */
-    --text-color: #333333;
-    /* Dark Gray */
-    --light-bg: #f4f4f4;
-    /* Light Background */
-    --card-bg: #e0e0e0;
-    /* Card Background */
-    --white: #ffffff;
-    /* Pure White */
+    /* Osun Chamber of Commerce - Cultural Palette */
 
-    /* Typography based on Site Plan [cite: 54] */
+    /* Primary: Deep Indigo (Represents 'Aro' Adire heritage) */
+    --primary-color: #2E1A47;
+
+    /* Secondary: Osun Gold (Represents Mineral Wealth) */
+    /* Previous yellow was #ffcc00; this is more metallic/regal */
+    --secondary-color: #F7D36F;
+
+    /* Accent: Ruby Red (Represents 'Alaari' Nobility) */
+    --accent-color: #8b0000;
+
+    /* Alternative Accent: Cocoa Brown (Use this if you prefer an Agricultural focus)
+       --accent-color: #8B4513; 
+    */
+
+    /* Neutrals */
+    --text-color: #333333;
+    --light-bg: #f9f7f2;
+    /* Slight warm tint to match gold */
+    --card-bg: #ffffff;
+    --white: #ffffff;
+
+    /* Typography */
     --heading-font: 'Noto Serif', serif;
     --body-font: 'Noto Sans', sans-serif;
 }
