@@ -1,7 +1,7 @@
 [
     {
         "name": "Summit Logistics International",
-        "address": "123 Industrial Pkwy, Osun, CA 96001",
+        "address": "123 Nike Pkwy, Osun, 96001",
         "phone": "(530) 555-0101",
         "website": "https://www.summitlogistics.test",
         "image": "images/member-1.webp",
@@ -19,7 +19,7 @@
     },
     {
         "name": "BuildRight Construction",
-        "address": "880 Boulder Drive, Osun, CA 96001",
+        "address": "881 Adeniyi Jones Drive, Osun, 96001",
         "phone": "(530) 555-0103",
         "website": "https://www.buildright.test",
         "image": "images/member-3.webp",
@@ -28,7 +28,7 @@
     },
     {
         "name": "TechStart Incubator",
-        "address": "200 Innovation Way, Suite 4, Osun, CA 96003",
+        "address": "2123 Innovation Way,  Suite 4, Osun, 96003",
         "phone": "(530) 555-0104",
         "website": "https://www.techstart.test",
         "image": "images/member-4.webp",
@@ -37,7 +37,7 @@
     },
     {
         "name": "Osun Florist",
-        "address": "12 Garden Lane, Osun, CA 96002",
+        "address": "121  Freedom Park, Old  Garaage, Lane, Osun, 96002",
         "phone": "(530) 555-0105",
         "website": "https://www.summitflorist.test",
         "image": "images/member-5.webp",
@@ -46,7 +46,7 @@
     },
     {
         "name": "Pinnacle Financial Group",
-        "address": "101 Market St, Floor 5, Osun, CA 96001",
+        "address": "101 Market Street, Floor 12, Osun, ",
         "phone": "(530) 555-0106",
         "website": "https://www.pinnaclefin.test",
         "image": "images/member-6.webp",
@@ -55,7 +55,7 @@
     },
     {
         "name": "GreenLeaf Landscaping",
-        "address": "77 Oak Avenue, Osun, CA 96004",
+        "address": "77 Fagbewesa Avenue, Osun, 96004",
         "phone": "(530) 555-0107",
         "website": "https://www.greenleaf.test",
         "image": "images/member-7.webp",
