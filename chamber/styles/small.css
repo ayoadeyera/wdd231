@@ -157,11 +157,13 @@ header {
     font-size: 0.9rem;
 }
 
-.list section a {
-    padding: 0.5rem;
+#members.list section a {
+    padding: 0.5rem 1rem;
     font-size: 0.85rem;
     width: fit-content;
     margin-top: 0;
+    display: block;
+    box-shadow: none;
 }
 
 /* Footer */
