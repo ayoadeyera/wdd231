@@ -1,169 +1,123 @@
-:root {
-    /* Color Palette */
+/* ============================================
+   MOBILE-FIRST DIRECTORY STYLES
+   Add this to your small.css file
+   ============================================ */
 
-    /* Main color: Deep Indigo */
-    --primary-color: #2E1A47;
-
-    /* Secondary color: Gold */
-    --secondary-color: #F7D36F;
-
-    /* Accent color: Ruby Red */
-    --accent-color: #8b0000;
-
-    /* Optional accent: Cocoa Brown */
-    /* --accent-color: #8B4513; */
-
-    /* Neutral colors */
-    --text-color: #333333;
-    --light-bg: #f9f7f2;
-    /* Warm tint background */
-    --card-bg: #ffffff;
-    --white: #ffffff;
-
-    /* Fonts */
-    --heading-font: 'Noto Serif', serif;
-    --body-font: 'Noto Sans', sans-serif;
-}
-
-/* Base setup */
-html {
-    box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-body {
-    font-family: var(--body-font);
-    color: var(--text-color);
-    background-color: var(--light-bg);
-    line-height: 1.5;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-/* Mobile layout */
-header,
-nav,
-main,
-footer {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 1rem;
-}
-
-/* Navigation */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    /* stacked on mobile */
-}
-
-nav a {
-    display: block;
-    padding: 0.75rem;
-    text-decoration: none;
-    color: var(--white);
-    background-color: var(--primary-color);
-    text-align: center;
-    margin-bottom: 0.2rem;
-}
-
-nav a:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-}
-
-/* Footer */
-footer {
-    background-color: var(--primary-color);
-    /* Deep Indigo */
-    color: var(--white);
-    padding: 2rem 1rem;
-    margin-top: 3rem;
-    font-size: 0.9rem;
-}
-
-.footer-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 2rem;
-}
-
-.footer-section h3 {
-    margin-top: 0;
-    color: var(--secondary-color);
-    font-size: 1.1rem;
-}
-
-.footer-section p {
-    margin: 0.3rem 0;
-}
-
-/* Directory page */
+/* Directory Header */
 .directory-header {
     text-align: center;
     padding: 1rem;
+    background-color: var(--white);
+    border-bottom: 2px solid var(--secondary-color);
 }
 
+.directory-header h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+}
+
+/* View Toggle Buttons */
 .menu-controls {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
     margin: 1rem 0;
 }
 
 .menu-controls button {
-    padding: 1rem;
+    padding: 0.75rem 1.5rem;
     font-weight: 700;
     cursor: pointer;
     background-color: var(--white);
-    border: 1px solid var(--text-color);
-    margin: 0 0.5rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
 }
 
 .menu-controls button:hover {
-    background-color: var(--card-bg);
+    background-color: var(--light-bg);
+    transform: translateY(-2px);
 }
 
 .menu-controls button.active {
     background-color: var(--primary-color);
     color: var(--white);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Member cards (mobile default) */
+/* ============================================
+   GRID VIEW (Default Mobile View)
+   ============================================ */
+#members {
+    padding: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Single column on mobile */
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+/* Member Cards */
 #members section {
     background-color: var(--card-bg);
-    border: 1px solid #ccc;
-    padding: 1rem;
-    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
     text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+#members section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Member Images */
 #members section img {
+    width: 100%;
     max-width: 150px;
     height: auto;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
 }
 
+/* Member Info Text */
+#members section h3 {
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+    color: var(--primary-color);
+}
+
+#members section p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Membership Level Badge */
+.membership-level {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+/* Website Link */
 #members section a {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    margin-top: 10px;
+    margin-top: 1rem;
     background-color: var(--primary-color);
     color: var(--white);
     text-decoration: none;
@@ -172,6 +126,7 @@ footer {
     border: 1px solid var(--primary-color);
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
 }
 
 #members section a:hover {
@@ -187,82 +142,121 @@ footer {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* List view (JS adds 'list' class) */
-.list section {
+/* ============================================
+   LIST VIEW
+   ============================================ */
+.list {
     display: flex;
-    align-items: center;
-    text-align: left;
-    gap: 1rem;
+    flex-direction: column;
+    gap: 0;
     padding: 0.5rem;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 1rem;
+    text-align: left;
     background-color: var(--white);
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+    box-shadow: none;
+    transition: background-color 0.2s ease;
+}
+
+.list section:hover {
+    background-color: var(--light-bg);
+    transform: none;
 }
 
 .list section:nth-child(even) {
-    background-color: var(--light-bg);
-    /* striped rows */
+    background-color: #f5f5f5;
 }
 
+.list section:nth-child(even):hover {
+    background-color: var(--light-bg);
+}
+
+/* Hide images in list view */
 .list section img {
     display: none;
-    /* hide images in list view */
 }
 
-/* Grid layout */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 1rem;
+/* Compact text in list view */
+.list section h3 {
+    margin: 0;
+    font-size: 1.1rem;
 }
 
-/* Social icons */
-.social-icons {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
+.list section p {
+    margin: 0.25rem 0;
+    font-size: 0.85rem;
 }
 
-.social-icons img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease;
+.list .membership-level {
+    margin-top: 0.25rem;
+    font-size: 0.75rem;
 }
 
-.social-icons img:hover {
-    transform: scale(1.2);
+.list section a {
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    width: fit-content;
 }
 
+/* ============================================
+   TABLET STYLES (500px+)
+   ============================================ */
+@media (min-width: 500px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns on tablets */
+        gap: 1.5rem;
+    }
 
+    .directory-header h2 {
+        font-size: 2rem;
+    }
 
-
-
-
-/* Website link */
-#members section a {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    margin-top: 10px;
-    background-color: var(--primary-color);
-    color: var(--white);
-    text-decoration: none;
-    font-weight: 700;
-    border-radius: 5px;
-    border: 1px solid var(--primary-color);
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    .menu-controls button {
+        font-size: 1rem;
+        padding: 0.875rem 2rem;
+    }
 }
 
-/* Hover Effect */
-#members section a:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    border-color: var(--secondary-color);
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
+/* ============================================
+   DESKTOP STYLES (1000px+)
+   ============================================ */
+@media (min-width: 1000px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 columns on desktop */
+        gap: 2rem;
+        padding: 1rem;
+    }
 
-/* Active/Click Effect */
-#members section a:active {
-    transform: translateY(0);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* List view desktop layout */
+    .list section {
+        display: grid;
+        grid-template-columns: 2fr 1.5fr 1fr auto;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .list section h3 {
+        font-size: 1.2rem;
+    }
+
+    .list section p {
+        font-size: 0.9rem;
+    }
+
+    /* Adjust membership level for desktop list */
+    .list .membership-level {
+        font-size: 0.8rem;
+        white-space: nowrap;
+    }
 }
