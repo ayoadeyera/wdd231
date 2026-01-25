@@ -1,17 +1,14 @@
-/* Desktop/Large Tablet styles (over 1000px wide) */
 @media (min-width: 64rem) {
 
-    /* Layout */
+    /* Layout Container */
     body {
         max-width: 1200px;
         margin: 0 auto;
-        /* center content */
         border: 1px solid #ccc;
-        /* outline */
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
-    /* Header & Navigation */
+    /* Header */
     header {
         display: flex;
         align-items: center;
@@ -19,25 +16,21 @@
         padding: 1rem 2rem;
     }
 
-    /* Hide menu button on desktop */
+    /* Navigation */
     #menu-button {
         display: none;
     }
 
-    /* Horizontal navigation */
     nav {
         background-color: transparent;
         margin-top: 0;
+        width: auto;
     }
 
     nav ul {
         display: flex;
-        /* horizontal list */
         flex-direction: row;
-        justify-content: flex-end;
         gap: 1rem;
-        background-color: transparent;
-        /* no mobile background */
     }
 
     nav a {
@@ -46,10 +39,8 @@
         padding: 0.5rem 1rem;
         font-weight: 700;
         border: none;
-        transition: color 0.3s ease;
     }
 
-    /* Hover: gold text + underline */
     nav a:hover {
         color: var(--secondary-color);
         background-color: transparent;
@@ -58,15 +49,22 @@
         text-decoration-thickness: 3px;
     }
 
-    /* Hero section */
-    .hero {
-        position: relative;
+    nav a.active {
+        background-color: transparent;
+        color: var(--primary-color);
+        border-left: none;
+        border-bottom: 3px solid var(--secondary-color);
     }
 
-    .hero img {
-        width: 100%;
-        height: auto;
-        display: block;
+    /* Directory Grid */
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    /* Hero */
+    .hero {
+        position: relative;
     }
 
     .hero-text {
@@ -74,90 +72,31 @@
         top: 20%;
         left: 5%;
         background-color: rgba(255, 255, 255, 0.9);
-        /* light overlay */
         padding: 2rem;
         width: 40%;
-        /* text box width */
         border-left: 5px solid var(--secondary-color);
-        /* gold bar */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
-    .hero-text h2 {
-        margin-top: 0;
-        font-size: 2.5rem;
-    }
-
-    /* Home page grid */
-    .home-grid {
+    /* Footer */
+    .footer-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        /* 3 columns */
-        gap: 20px;
-        padding: 2rem;
-    }
-
-    .card {
-        height: 100%;
-        /* equal height */
-        background-color: var(--white);
-        border: 1px solid #ddd;
-        padding: 1.5rem;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Directory views */
-    .directory-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        text-align: left;
         padding: 1rem;
     }
 
-    .directory-list {
-        display: flex;
-        flex-direction: column;
+    .contact-info {
+        text-align: left;
     }
 
-    .directory-list section {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        /* name | phone | site */
-        align-items: center;
-        padding: 0.5rem;
-        border-bottom: 1px solid #ccc;
+    .social-icons {
+        justify-content: center;
     }
 
-    .directory-list img {
-        display: none;
-        /* hide images in list view */
+    .dev-info {
+        text-align: left;
+        padding-left: 2rem;
     }
-}
-
-/* --- FOOTER LAYOUT (Desktop) --- */
-.footer-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* Three equal columns */
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: left;
-    padding: 1rem;
-}
-
-/* Contact Info */
-.contact-info {
-    text-align: left;
-}
-
-/* Social Icons */
-.social-icons {
-    justify-content: center;
-}
-
-/* Dev Info */
-.dev-info {
-    text-align: left;
-    padding-left: 2rem;
 }
