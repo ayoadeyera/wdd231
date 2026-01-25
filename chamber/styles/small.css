@@ -91,7 +91,7 @@ header {
     box-shadow: 10px 15px --primary-color;
     border-radius: 8px;
     text-align: center;
-    
+
 }
 
 #members section img {
@@ -100,28 +100,32 @@ header {
     border-radius: 5px;
 }
 
+/* --- Beautiful Button Style --- */
 #members section a {
     display: inline-block;
-    padding: 0.75rem 1.5rem;
-    margin-top: 10px;
+    padding: 0.8rem 1.5rem;
+    margin-top: 1rem;
     background-color: var(--primary-color);
     color: var(--white);
     text-decoration: none;
     font-weight: 700;
-    border-radius: 5px;
-    border: 1px solid var(--primary-color);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 4px;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Hover Effect */
 #members section a:hover {
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    border-color: var(--secondary-color);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* List View Overrides */
+/* List View */
 .list {
     display: flex;
     flex-direction: column;
