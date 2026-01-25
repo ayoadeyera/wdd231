@@ -79,7 +79,7 @@ nav a.active {
 
     /* Horizontal menu */
     nav ul {
-        display: flex !important; /* always show on desktop */
+        display: flex !important; 
         flex-direction: row;
         justify-content: flex-end;
         gap: 1rem;
