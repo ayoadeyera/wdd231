@@ -51,8 +51,7 @@ header {
     gap: 1rem;
 }
 
-/* --- NAVIGATION REMOVED --- */
-/* It is now handled exclusively in navigation.css */
+/* --- NAVIGATION REMOVED (Now in navigation.css) --- */
 
 /* Directory & Members */
 .directory-header {
