@@ -1,7 +1,13 @@
-// 1. Dynamic Copyright Year
+// Dynamic Copyright Year
 const currentYear = new Date().getFullYear();
-document.getElementById("currentYear").textContent = currentYear;
+const yearSpan = document.getElementById("currentYear");
+if (yearSpan) {
+    yearSpan.textContent = currentYear;
+}
 
-// 2. Last Modified Date
+// Last Modified Date
 let lastMod = document.lastModified;
-document.getElementById("lastModified").textContent = `Last Modification: ${lastMod}`;
+const lastModSpan = document.getElementById("lastModified");
+if (lastModSpan) {
+    lastModSpan.textContent = `Last Modification: ${lastMod}`;
+}
