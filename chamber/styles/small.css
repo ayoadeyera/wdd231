@@ -88,6 +88,8 @@ header {
     background-color: var(--card-bg);
     border: 1px solid #ccc;
     padding: 1.5rem;
+    box-shadow: 5px 10px 3px --accent-color;
+    border-radius: 8px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
