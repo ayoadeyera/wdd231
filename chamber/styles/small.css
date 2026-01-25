@@ -14,7 +14,9 @@ html {
     box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
@@ -25,7 +27,12 @@ body {
     line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
@@ -34,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 header {
     background-color: var(--white);
     padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
 }
 
@@ -44,63 +51,6 @@ header {
     gap: 1rem;
 }
 
-/* Navigation */
-#menu-button {
-    font-size: 2rem;
-    border: 0;
-    background: none;
-    color: var(--primary-color);
-    cursor: pointer;
-    position: absolute;
-    top: 1.5rem;
-    right: 1rem;
-}
-
-#menu-button::before {
-    content: "☰";
-}
-
-#menu-button.open::before {
-    content: "✖";
-}
-
-nav {
-    background-color: var(--primary-color);
-    width: 100%;
-}
-
-nav ul {
-    display: none;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul.open {
-    display: block;
-}
-
-nav a {
-    display: block;
-    padding: 1rem;
-    text-align: center;
-    text-decoration: none;
-    color: var(--white);
-    transition: 0.3s;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-nav a:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-}
-
-nav a.active {
-    background-color: rgba(0, 0, 0, 0.2);
-    color: var(--secondary-color);
-    font-weight: 700;
-    border-left: 4px solid var(--secondary-color);
-}
 
 /* Directory & Members */
 .directory-header {
@@ -138,7 +88,7 @@ nav a.active {
     border: 1px solid #ccc;
     padding: 1.5rem;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #members section img {

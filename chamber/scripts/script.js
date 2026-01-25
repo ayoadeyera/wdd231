@@ -7,11 +7,3 @@ document.getElementById("currentYear").textContent = currentYear;
 let lastMod = document.lastModified;
 document.getElementById("lastModified").textContent = `Last Modification: ${lastMod}`;
 
-// 3. Hamburger Menu Functionality
-const hamButton = document.querySelector('#menu-button');
-const navigation = document.querySelector('#menu-list');
-
-hamButton.addEventListener('click', () => {
-    navigation.classList.toggle('open');
-    hamButton.classList.toggle('open');
-});

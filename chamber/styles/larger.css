@@ -16,45 +16,6 @@
         padding: 1rem 2rem;
     }
 
-    /* Navigation */
-    #menu-button {
-        display: none;
-    }
-
-    nav {
-        background-color: transparent;
-        margin-top: 0;
-        width: auto;
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-    }
-
-    nav a {
-        background-color: transparent;
-        color: var(--text-color);
-        padding: 0.5rem 1rem;
-        font-weight: 700;
-        border: none;
-    }
-
-    nav a:hover {
-        color: var(--secondary-color);
-        background-color: transparent;
-        text-decoration: underline;
-        text-decoration-color: var(--primary-color);
-        text-decoration-thickness: 3px;
-    }
-
-    nav a.active {
-        background-color: transparent;
-        color: var(--primary-color);
-        border-left: none;
-        border-bottom: 3px solid var(--secondary-color);
-    }
 
     /* Directory Grid */
     .grid {

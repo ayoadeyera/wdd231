@@ -13,13 +13,11 @@
 }
 
 #menu-button::before {
-    content: "☰";
-    /* menu icon */
+    content: "☰"; /* menu icon */
 }
 
 #menu-button.open::before {
-    content: "✖";
-    /* close icon */
+    content: "✖"; /* close icon */
 }
 
 /* Nav container */
@@ -81,8 +79,7 @@ nav a.active {
 
     /* Horizontal menu */
     nav ul {
-        display: flex !important;
-        /* always show on desktop */
+        display: flex !important; /* always show on desktop */
         flex-direction: row;
         justify-content: flex-end;
         gap: 1rem;
@@ -114,3 +111,4 @@ nav a.active {
         border-bottom: 3px solid var(--secondary-color);
     }
 }
+
