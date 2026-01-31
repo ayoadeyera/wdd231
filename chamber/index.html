@@ -55,7 +55,7 @@
         </ul>
     </nav>
 
-    <main class="home-grid">
+   <main class="home-grid">
         <!-- Hero Section -->
         <div class="hero">
             <picture>
@@ -71,24 +71,28 @@
 
         <!-- Current Events -->
         <section class="events-section">
-            <h3>Current Events</h3>
+            <h3>Events</h3>
             <div class="event-card">
-                <h4>Chamber Networking Night</h4>
-                <p>Date: October 15th, 2025</p>
-                <p>Join us for an evening of connection and growth.</p>
+                <p>There are currently no events. Check back later!</p>
             </div>
         </section>
 
-        <!-- Weather Section -->
+        <!-- Current Weather Section -->
         <section class="weather-section">
             <h3>Current Weather</h3>
-            <div id="weather-container">
-                <div class="current-weather">
-                    <img id="weather-icon" src="" alt="">
-                    <p><span id="current-temp"></span>&deg;C</p>
-                    <p id="weather-desc"></p>
+            <div class="current-weather">
+                <img id="weather-icon" src="" alt="">
+                <p><span id="current-temp"></span></p>
+                <div id="weather-details" class="weather-details">
+                    <!-- Weather details injected by JS -->
                 </div>
-                <h4>3-Day Forecast</h4>
+            </div>
+        </section>
+
+        <!-- Weather Forecast Section -->
+        <section class="forecast-section">
+            <h3>Weather Forecast</h3>
+            <div class="forecast-content">
                 <div id="forecast-container" class="forecast-grid">
                     <!-- Forecast items injected by JS -->
                 </div>
@@ -97,7 +101,6 @@
 
         <!-- Member Spotlights -->
         <section class="spotlights-section">
-            <h3>Member Spotlights</h3>
             <div id="spotlight-container" class="spotlight-grid">
                 <!-- Spotlight cards injected by JS -->
             </div>

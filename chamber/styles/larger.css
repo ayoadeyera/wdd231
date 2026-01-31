@@ -16,8 +16,6 @@
         padding: 1rem 2rem;
     }
 
-
-
     /* Directory Grid */
     .grid {
         grid-template-columns: repeat(3, 1fr);
@@ -63,63 +61,87 @@
     }
 }
 
-
-
-/* NEW HOME PAGE STYLES */
-
-/* --- HOME PAGE ADD-ONS (Desktop/Tablet) --- */
-
-/* Grid Layout for Home Page */
-.home-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 20px;
-}
-
-/* Hero spans all columns */
-.hero {
-    grid-column: 1 / 4;
-    margin-bottom: 1rem;
-}
-
-/* Events takes first column */
-.events-section {
-    grid-column: 1 / 2;
-    height: fit-content;
-}
-
-/* Weather takes middle column */
-.weather-section {
-    grid-column: 2 / 3;
-    height: fit-content;
-}
-
-/* Spotlights take last column */
-.spotlights-section {
-    grid-column: 3 / 4;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    background: transparent; /* Remove container bg if exists */
-    border: none; /* Remove container border */
-    box-shadow: none; /* Remove container shadow */
-    padding: 0;
-    margin: 0;
-}
-
-/* Remove default margin on spotlight cards in grid view */
-.spotlights-section .spotlight-card {
-    margin-bottom: 0;
-    height: 100%; /* Equal height */
-}
-
-/* Responsive adjustment for tablets (2 columns) */
-@media (max-width: 900px) and (min-width: 600px) {
+/* HOME PAGE DESKTOP LAYOUT */
+@media (min-width: 64rem) {
+    
+    /* Grid Layout for Home Page */
     .home-grid {
-        grid-template-columns: 1fr 1fr;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        max-width: 1400px;
+        margin: 2rem auto;
+        padding: 0 1.5rem;
+    }
+
+    /* Hero spans all columns */
+    .hero {
+        grid-column: 1 / 4;
+        margin-bottom: 1rem;
+    }
+
+    /* Events takes first column */
+    .events-section {
+        grid-column: 1 / 2;
+        height: fit-content;
+    }
+
+    /* Current Weather takes middle column */
+    .weather-section {
+        grid-column: 2 / 3;
+        height: fit-content;
+    }
+
+    /* Forecast takes third column */
+    .forecast-section {
+        grid-column: 3 / 4;
+        height: fit-content;
+    }
+
+    /* Spotlights span all three columns and display horizontally */
+    .spotlights-section {
+        grid-column: 1 / 4;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 2rem 0;
+        margin: 0;
+    }
+
+    .spotlight-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    /* Spotlight cards in vertical layout for desktop */
+    .spotlight-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .spotlight-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .spotlight-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+}
+
+/* Tablet Layout - Two columns then spotlights */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .home-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        padding: 0 1rem;
     }
     
     .hero {
@@ -133,10 +155,18 @@
     .weather-section {
         grid-column: 2 / 3;
     }
+
+    .forecast-section {
+        grid-column: 1 / 3;
+    }
     
     .spotlights-section {
         grid-column: 1 / 3;
-        flex-direction: row; /* Horizontal on tablet row */
-        justify-content: space-between;
+    }
+
+    .spotlight-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
     }
 }
