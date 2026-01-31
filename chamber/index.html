@@ -55,54 +55,54 @@
         </ul>
     </nav>
 
-    <main>
-    <div class="hero">
-        <picture>
-            <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
-            <source media="(min-width: 500px)" srcset="images/hero-medium.webp">
-            <img src="images/hero-small.webp" alt="Busy Osun Business District" width="500" height="300" fetchpriority="high">
-        </picture>
-        <div class="hero-text">
-            <h2>Empowering Business in Osun</h2>
-            <p>Join us to grow your network and influence the local economy.</p>
-            <a href="join.html" class="cta-btn">Become a Member</a>
+    <main class="home-grid">
+        <!-- Hero Section -->
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/hero-small.webp"> 
+                <img src="images/hero-img.webp" alt="Chamber Hero Image" class="hero-img">
+            </picture>
+            <div class="hero-overlay">
+                <h2>Welcome to the Osogbo Chamber</h2>
+                <p>Building Business. Building Community.</p>
+                <a href="join.html" class="cta-btn">Join the Chamber</a>
+            </div>
         </div>
-    </div>
 
-    <div class="home-grid">
-        
-        <section class="card events-card">
-            <h3>Upcoming Events</h3>
-            <ul class="event-list">
-                <li><strong>Oct 24:</strong> Networking Mixer</li>
-                <li><strong>Nov 05:</strong> SME Growth Workshop</li>
-                <li><strong>Nov 12:</strong> TechStart Demo Day</li>
-            </ul>
-        </section>
-
-        <section class="card weather-card">
-            <h3>Weather in Osun</h3>
-            <div class="weather-content">
-                <figure>
-                    <img id="weather-icon" src="" alt="" width="50" height="50">
-                    <figcaption></figcaption>
-                </figure>
-                <p class="temp">Current: <span id="current-temp"></span></p>
-            </div>
-            <hr>
-            <h4>3-Day Forecast</h4>
-            <div id="forecast" class="forecast-grid">
-                <p>Loading...</p> 
+        <!-- Current Events -->
+        <section class="events-section">
+            <h3>Current Events</h3>
+            <div class="event-card">
+                <h4>Chamber Networking Night</h4>
+                <p>Date: October 15th, 2025</p>
+                <p>Join us for an evening of connection and growth.</p>
             </div>
         </section>
-    </div>
 
-    <div class="spotlight-section">
-        <h2>Member Spotlights</h2>
-        <div id="spotlights" class="spotlight-grid">
+        <!-- Weather Section -->
+        <section class="weather-section">
+            <h3>Current Weather</h3>
+            <div id="weather-container">
+                <div class="current-weather">
+                    <img id="weather-icon" src="" alt="">
+                    <p><span id="current-temp"></span>&deg;C</p>
+                    <p id="weather-desc"></p>
+                </div>
+                <h4>3-Day Forecast</h4>
+                <div id="forecast-container" class="forecast-grid">
+                    <!-- Forecast items injected by JS -->
+                </div>
             </div>
-    </div>
-</main>
+        </section>
+
+        <!-- Member Spotlights -->
+        <section class="spotlights-section">
+            <h3>Member Spotlights</h3>
+            <div id="spotlight-container" class="spotlight-grid">
+                <!-- Spotlight cards injected by JS -->
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="footer-grid">
