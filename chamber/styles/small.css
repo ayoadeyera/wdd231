@@ -215,3 +215,122 @@ footer {
         font-size: 2rem;
     }
 }
+
+
+
+
+
+
+/*NEW  FOR HOME PAGE*/
+
+/* --- HOME PAGE SPECIFIC STYLES --- */
+
+/* Event List */
+.event-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+.event-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Weather Card */
+.weather-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.weather-content img {
+    background-color: var(--secondary-color); /* Gold background for icon visibility */
+    border-radius: 50%;
+    padding: 5px;
+}
+.temp {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.forecast-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+.forecast-day {
+    text-align: center;
+    background: #f4f4f4;
+    padding: 0.5rem;
+    border-radius: 5px;
+    min-width: 60px;
+}
+.day-name {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 0;
+    font-size: 0.8rem;
+}
+.day-temp {
+    margin: 0.2rem 0 0;
+}
+
+/* Spotlight Section */
+.spotlight-section {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: var(--white);
+    margin-top: 1rem;
+}
+
+.spotlight-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.spotlight-card {
+    border: 1px solid #ccc;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background: var(--white);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.spotlight-card:hover {
+    transform: translateY(-5px);
+}
+
+.spotlight-header h3 {
+    margin-bottom: 0.2rem;
+}
+.tag {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 0.2rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.spotlight-card img {
+    margin: 1rem 0;
+    max-height: 80px;
+    object-fit: contain;
+}
+
+.spotlight-contact {
+    text-align: left;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+.spotlight-contact a {
+    display: block;
+    margin-top: 0.5rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+}

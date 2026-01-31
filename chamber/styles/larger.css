@@ -62,3 +62,30 @@
         padding-left: 2rem;
     }
 }
+
+
+
+/* NEW HOME PAGE STYLES */
+
+/* --- HOME PAGE DESKTOP --- */
+    
+    /* Top Grid: Events and Weather side-by-side */
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Spotlights: 3 columns */
+    .spotlight-grid {
+        grid-template-columns: repeat(3, 1fr); /* Or repeat(auto-fit, minmax(300px, 1fr)) */
+        gap: 2rem;
+    }
+    
+    .spotlight-card {
+        height: 100%; /* Make cards equal height */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
