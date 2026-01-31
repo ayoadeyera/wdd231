@@ -248,7 +248,7 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(46, 26, 71, 0.85);
+    background: rgba(46, 26, 71, 0.92);
     padding: 1.5rem;
     width: 85%;
     border-radius: 8px;
@@ -433,7 +433,11 @@ footer {
 }
 
 .spotlights-section h3 {
-    display: none; /* Hide the main heading */
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-family: var(--heading-font);
 }
 
 .spotlight-grid {
@@ -489,7 +493,7 @@ footer {
 .spotlight-card p {
     margin: 0.3rem 0;
     font-size: 0.95rem;
-    color: var(--secondary-color);
+    color: var(--text-color);
 }
 
 .spotlight-card strong {
