@@ -230,6 +230,7 @@ footer {
     text-align: center;
     color: var(--card-bg);
     margin-bottom: 1rem;
+    background-color: var(--primary-color);
 }
 
 .hero img {
