@@ -1,6 +1,4 @@
-/* Mobile navigation (default) */
-
-/* Hamburger button */
+/* Mobile Navigation */
 #menu-button {
     font-size: 2rem;
     border: 0;
@@ -13,20 +11,18 @@
 }
 
 #menu-button::before {
-    content: "☰"; /* menu icon */
+    content: "☰";
 }
 
 #menu-button.open::before {
-    content: "✖"; /* close icon */
+    content: "✖";
 }
 
-/* Nav container */
 nav {
     background-color: var(--primary-color);
     width: 100%;
 }
 
-/* Menu list (hidden by default) */
 nav ul {
     display: none;
     list-style-type: none;
@@ -34,19 +30,17 @@ nav ul {
     margin: 0;
 }
 
-/* Show menu when "open" class is added */
 nav ul.open {
     display: block;
 }
 
-/* Nav links */
 nav a {
     display: block;
     padding: 1rem;
     text-align: center;
     text-decoration: none;
     color: var(--card-bg);
-    transition: 0.3s;
+    transition: all 0.3s;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -55,7 +49,6 @@ nav a:hover {
     color: var(--primary-color);
 }
 
-/* Active link (mobile) */
 nav a.active {
     background-color: rgba(0, 0, 0, 0.2);
     color: var(--secondary-color);
@@ -63,29 +56,23 @@ nav a.active {
     border-left: 4px solid var(--secondary-color);
 }
 
-/* Desktop navigation (over 1000px) */
+/* Desktop Navigation */
 @media (min-width: 64rem) {
-
-    /* Hide hamburger */
     #menu-button {
         display: none;
     }
 
-    /* Reset nav container */
     nav {
         background-color: transparent;
         margin-top: 0;
     }
 
-    /* Horizontal menu */
     nav ul {
-        display: flex !important; 
-        flex-direction: row;
+        display: flex !important;
         justify-content: flex-end;
         gap: 1rem;
     }
 
-    /* Desktop links */
     nav a {
         background-color: transparent;
         color: var(--text-color);
@@ -94,16 +81,13 @@ nav a.active {
         border: none;
     }
 
-    /* Hover effect (desktop) */
     nav a:hover {
-        color: var(--secondary-color);
-        background-color: transparent;
+        color: var(--primary-color);
         text-decoration: underline;
-        text-decoration-color: var(--primary-color);
+        text-decoration-color: var(--secondary-color);
         text-decoration-thickness: 3px;
     }
 
-    /* Active link (desktop) */
     nav a.active {
         background-color: transparent;
         color: var(--primary-color);

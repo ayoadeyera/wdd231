@@ -1,5 +1,4 @@
 @media (min-width: 64rem) {
-    /* Layout Container */
     body {
         max-width: 1200px;
         margin: 0 auto;
@@ -7,7 +6,6 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
-    /* Header */
     header {
         display: flex;
         align-items: center;
@@ -15,13 +13,11 @@
         padding: 1rem 2rem;
     }
 
-    /* Directory Grid */
     .grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
 
-    /* Footer */
     .footer-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -30,20 +26,14 @@
         padding: 1rem;
     }
 
-    .contact-info {
-        text-align: left;
-    }
-
     .social-icons {
         justify-content: center;
     }
 
     .dev-info {
-        text-align: left;
         padding-left: 2rem;
     }
 
-    /* HOME PAGE DESKTOP LAYOUT */
     .home-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -53,28 +43,23 @@
         padding: 0 1.5rem;
     }
 
-    /* Hero spans all columns */
     .hero {
         grid-column: 1 / 4;
         margin-bottom: 1rem;
     }
 
-    /* Events takes first column */
     .events-section {
         grid-column: 1 / 2;
     }
 
-    /* Current Weather takes middle column */
     .weather-section {
         grid-column: 2 / 3;
     }
 
-    /* Forecast takes third column */
     .forecast-section {
         grid-column: 3 / 4;
     }
 
-    /* Spotlights span all three columns */
     .spotlights-section {
         grid-column: 1 / 4;
         padding: 2rem 0;
@@ -86,7 +71,6 @@
         gap: 2rem;
     }
 
-    /* Spotlight cards vertical layout for desktop */
     .spotlight-card {
         display: flex;
         flex-direction: column;
@@ -105,7 +89,6 @@
     }
 }
 
-/* Tablet Layout */
 @media (max-width: 1023px) and (min-width: 768px) {
     .home-grid {
         display: grid;
@@ -114,7 +97,9 @@
         padding: 0 1rem;
     }
     
-    .hero {
+    .hero,
+    .forecast-section,
+    .spotlights-section {
         grid-column: 1 / 3;
     }
     
@@ -124,14 +109,6 @@
     
     .weather-section {
         grid-column: 2 / 3;
-    }
-
-    .forecast-section {
-        grid-column: 1 / 3;
-    }
-    
-    .spotlights-section {
-        grid-column: 1 / 3;
     }
 
     .spotlight-grid {

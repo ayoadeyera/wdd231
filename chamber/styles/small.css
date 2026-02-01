@@ -7,7 +7,6 @@
     --card-bg: #ffffff;
     --border-light: #ddd;
     --border-medium: #ccc;
-    --border-dark: #999;
     --shadow-light: rgba(0, 0, 0, 0.1);
     --shadow-medium: rgba(0, 0, 0, 0.15);
     --heading-font: 'Noto Serif', serif;
@@ -145,7 +144,7 @@ header {
 /* List View */
 .list section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     text-align: left;
     padding: 1rem;
@@ -157,13 +156,16 @@ header {
     display: none;
 }
 
-.list section h3 {
+.list section h3,
+.list section p {
     margin: 0;
+}
+
+.list section h3 {
     font-size: 1rem;
 }
 
 .list section p {
-    margin: 0;
     font-size: 0.9rem;
 }
 
@@ -195,7 +197,7 @@ footer {
 .footer-section h3 {
     margin-top: 0;
     color: var(--secondary-color);
-    /* font-size: 1.1rem; */
+    font-size: 1.1rem;
 }
 
 .social-icons {
@@ -372,7 +374,7 @@ footer {
 .forecast-section h4 {
     text-align: center;
     color: var(--primary-color);
-    margin: 1rem 0 0.5rem 0;
+    margin: 1rem 0 0.5rem;
 }
 
 .forecast-content {
@@ -434,7 +436,7 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .spotlight-card:hover {
@@ -443,10 +445,10 @@ footer {
 }
 
 .spotlight-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 8px 8px 0 0;
+    max-width: 150px;
+    height: auto;    
+    border-radius: 5px;
+    align-self: center;
 }
 
 .spotlight-info {
@@ -457,7 +459,7 @@ footer {
 }
 
 .spotlight-card h4 {
-    margin: 0 0 1rem 0;
+    margin: 0 0 1rem;
     color: var(--primary-color);
     font-size: 1.2rem;
 }
@@ -496,7 +498,7 @@ footer {
     width: fit-content;
 }
 
-/* Tablet Layout */
+/* Responsive Breakpoints - Consolidated */
 @media (min-width: 500px) {
     .grid {
         grid-template-columns: repeat(2, 1fr);
@@ -507,7 +509,6 @@ footer {
         font-size: 2rem;
     }
     
-    /* Increase sizes for tablet */
     .hero h2 {
         font-size: 1.8rem;
     }
@@ -562,7 +563,6 @@ footer {
     }
 }
 
-/* Tablet and Desktop Spotlight Layout */
 @media (min-width: 768px) {
     .home-grid {
         display: grid;
@@ -570,10 +570,7 @@ footer {
         gap: 1.5rem;
     }
 
-    .hero {
-        grid-column: 1 / -1;
-    }
-
+    .hero,
     .spotlights-section {
         grid-column: 1 / -1;
     }
