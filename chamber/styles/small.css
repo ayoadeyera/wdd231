@@ -247,8 +247,8 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgba(46, 26, 71, 0.92);
-    padding: 1.5rem;
-    width: 85%;
+    padding: 1rem;
+    width: 90%;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -256,12 +256,12 @@ footer {
 .hero h2 {
     margin-top: 0;
     color: var(--card-bg);
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 
 .hero p {
-    font-size: 1.1rem;
-    margin: 1rem 0;
+    font-size: 1rem;
+    margin: 0.8rem 0;
     color: var(--secondary-color);
 }
 
@@ -269,11 +269,12 @@ footer {
     display: inline-block;
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    padding: 12px 28px;
+    padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    margin-top: 15px;
+    margin-top: 10px;
+    font-size: 0.95rem;
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
@@ -296,16 +297,16 @@ footer {
 .home-grid h3 {
     background-color: var(--primary-color);
     color: var(--card-bg);
-    padding: 1rem;
+    padding: 0.8rem;
     margin: 0;
     border-radius: 8px 8px 0 0;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
 .home-grid section > *:not(h3) {
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 /* Events Section */
@@ -337,13 +338,13 @@ footer {
 }
 
 .current-weather img {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     margin-bottom: 0.5rem;
 }
 
 #current-temp {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     margin: 0.5rem 0;
     color: var(--primary-color);
@@ -353,7 +354,7 @@ footer {
     text-transform: capitalize;
     font-style: italic;
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .weather-details {
@@ -411,15 +412,15 @@ footer {
 .spotlights-section h3 {
     text-align: center;
     color: var(--primary-color);
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
     font-family: var(--heading-font);
 }
 
 .spotlight-grid {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
     padding: 0 1rem;
 }
 
@@ -429,10 +430,9 @@ footer {
     border-radius: 8px;
     padding: 0;
     box-shadow: 0 3px 6px var(--shadow-light);
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    gap: 0;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -443,14 +443,13 @@ footer {
 
 .spotlight-card img {
     width: 100%;
-    height: 100%;
+    height: 180px;
     object-fit: cover;
-    border-radius: 8px 0 0 8px;
-    grid-row: 1 / -1;
+    border-radius: 8px 8px 0 0;
 }
 
 .spotlight-info {
-    padding: 1.5rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -459,12 +458,12 @@ footer {
 .spotlight-card h4 {
     margin: 0 0 1rem 0;
     color: var(--primary-color);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .spotlight-card p {
     margin: 0.3rem 0;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 .spotlight-card strong {
@@ -506,6 +505,60 @@ footer {
     .directory-header h2 {
         font-size: 2rem;
     }
+    
+    /* Increase sizes for tablet */
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+    }
+    
+    .hero-overlay {
+        padding: 1.5rem;
+        width: 85%;
+    }
+    
+    .cta-btn {
+        padding: 12px 28px;
+        font-size: 1rem;
+    }
+    
+    .home-grid h3 {
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+    
+    .home-grid section > *:not(h3) {
+        padding: 1.5rem;
+    }
+    
+    #current-temp {
+        font-size: 2.5rem;
+    }
+    
+    .current-weather img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .spotlights-section h3 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .spotlight-card h4 {
+        font-size: 1.3rem;
+    }
+    
+    .spotlight-info {
+        padding: 1.5rem;
+    }
+    
+    .spotlight-card p {
+        font-size: 0.95rem;
+    }
 }
 
 /* Tablet and Desktop Spotlight Layout */
@@ -531,17 +584,13 @@ footer {
     }
 
     .spotlight-card {
-        grid-template-columns: 1fr;
-        grid-template-rows: 200px auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 
     .spotlight-card img {
-        grid-row: 1;
         height: 200px;
         border-radius: 8px 8px 0 0;
-    }
-
-    .spotlight-info {
-        grid-row: 2;
     }
 }
