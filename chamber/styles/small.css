@@ -5,18 +5,21 @@
     --text-color: #333333;
     --light-bg: #f9f7f2;
     --card-bg: #ffffff;
-    --white: #ffffff;
+    --border-light: #ddd;
+    --border-medium: #ccc;
+    --border-dark: #999;
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --shadow-medium: rgba(0, 0, 0, 0.15);
     --heading-font: 'Noto Serif', serif;
     --body-font: 'Noto Sans', sans-serif;
 }
 
+/* Base Styles */
 html {
     box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
     box-sizing: inherit;
 }
 
@@ -25,23 +28,19 @@ body {
     color: var(--text-color);
     background-color: var(--light-bg);
     line-height: 1.5;
+    margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
 /* Header */
 header {
-    background-color: var(--white);
+    background-color: var(--card-bg);
     padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px var(--shadow-light);
     position: relative;
 }
 
@@ -51,10 +50,14 @@ header {
     gap: 1rem;
 }
 
-/* Directory & Members */
+/* Directory Styles */
 .directory-header {
     text-align: center;
     padding: 1rem;
+}
+
+.directory-header h2 {
+    font-size: 1.8rem;
 }
 
 .menu-controls {
@@ -65,16 +68,18 @@ header {
     padding: 1rem;
     font-weight: 700;
     cursor: pointer;
-    background-color: var(--white);
+    background-color: var(--card-bg);
     border: 1px solid var(--text-color);
     margin: 0 0.5rem;
+    transition: all 0.3s ease;
 }
 
 .menu-controls button.active {
     background-color: var(--primary-color);
-    color: var(--white);
+    color: var(--card-bg);
 }
 
+/* Grid Layouts */
 .grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -82,9 +87,17 @@ header {
     padding: 1rem;
 }
 
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+/* Members Directory */
 #members section {
     background-color: var(--card-bg);
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-medium);
     padding: 1.5rem;
     box-shadow: 10px 15px var(--primary-color);
     text-align: center;
@@ -96,13 +109,22 @@ header {
     border-radius: 5px;
 }
 
-/* --- Beautiful Button Style --- */
+#members section h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+#members section p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+}
+
 #members section a {
     display: inline-block;
     padding: 0.8rem 1.5rem;
     margin-top: 1rem;
     background-color: var(--primary-color);
-    color: var(--white);
+    color: var(--card-bg);
     text-decoration: none;
     font-weight: 700;
     font-size: 0.9rem;
@@ -110,33 +132,25 @@ header {
     letter-spacing: 0.5px;
     border-radius: 4px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px var(--shadow-light);
 }
 
-/* Hover Effect */
 #members section a:hover {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 12px var(--shadow-medium);
 }
 
 /* List View */
-.list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    padding: 1rem;
-}
-
 .list section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     text-align: left;
     padding: 1rem;
-    background-color: var(--white);
-    border: 1px solid #eee;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-light);
 }
 
 .list section img {
@@ -158,14 +172,13 @@ header {
     font-size: 0.85rem;
     width: fit-content;
     margin-top: 0;
-    display: block;
     box-shadow: none;
 }
 
 /* Footer */
 footer {
     background-color: var(--primary-color);
-    color: var(--white);
+    color: var(--card-bg);
     padding: 2rem 1rem;
     margin-top: 3rem;
     font-size: 0.9rem;
@@ -200,23 +213,8 @@ footer {
     transform: scale(1.2);
 }
 
-/* Tablet Layout */
-@media (min-width: 500px) {
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-    }
+/* HOME PAGE STYLES */
 
-    .directory-header h2 {
-        font-size: 2rem;
-    }
-}
-
-/*NEW  FOR HOME PAGE*/
-
-/* --- HOME PAGE ADD-ONS --- */
-
-/* Mobile-first: stacked layout */
 .home-grid {
     display: flex;
     flex-direction: column;
@@ -230,7 +228,7 @@ footer {
 .hero {
     position: relative;
     text-align: center;
-    color: white;
+    color: var(--card-bg);
     margin-bottom: 1rem;
 }
 
@@ -257,7 +255,7 @@ footer {
 
 .hero h2 {
     margin-top: 0;
-    color: #ffffff;
+    color: var(--card-bg);
     font-size: 1.8rem;
 }
 
@@ -286,18 +284,18 @@ footer {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Home Page Sections - Common Styles */
+/* Common Section Styles */
 .home-grid section {
     padding: 0;
-    background-color: white;
-    border: 1px solid #ddd;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-light);
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px var(--shadow-light);
 }
 
 .home-grid h3 {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--card-bg);
     padding: 1rem;
     margin: 0;
     border-radius: 8px 8px 0 0;
@@ -306,16 +304,11 @@ footer {
     font-weight: bold;
 }
 
-/* Section Content Area */
 .home-grid section > *:not(h3) {
     padding: 1.5rem;
 }
 
 /* Events Section */
-.events-section {
-    background-color: white;
-}
-
 .event-card {
     padding: 1rem;
     border-left: 4px solid var(--secondary-color);
@@ -330,19 +323,12 @@ footer {
 
 .event-card p {
     margin: 0.5rem 0;
-    color: var(--text-color);
 }
 
-/* Weather Sections - Split into Current and Forecast */
-.weather-section,
-.forecast-section {
-    background-color: white;
-}
-
-/* Current Weather */
+/* Weather Sections */
 .current-weather {
     text-align: center;
-    border-bottom: 2px solid #eee;
+    border-bottom: 2px solid var(--border-light);
     padding: 1.5rem;
     margin: 0;
     display: flex;
@@ -367,7 +353,6 @@ footer {
     text-transform: capitalize;
     font-style: italic;
     margin: 0;
-    color: var(--text-color);
     font-size: 1.1rem;
 }
 
@@ -379,12 +364,6 @@ footer {
 
 .weather-details p {
     margin: 0.3rem 0;
-    color: var(--text-color);
-}
-
-/* Forecast Section */
-.forecast-content {
-    padding: 1.5rem;
 }
 
 .weather-section h4,
@@ -394,38 +373,35 @@ footer {
     margin: 1rem 0 0.5rem 0;
 }
 
+.forecast-content {
+    padding: 1.5rem;
+}
+
 .forecast-grid {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    text-align: left;
 }
 
 .forecast-card {
     background: #f9f9f9;
     padding: 0.8rem;
     border-radius: 5px;
-    border: 1px solid #eee;
+    border: 1px solid var(--border-light);
     font-size: 1rem;
-    color: var(--text-color);
 }
 
 .forecast-card img {
-    display: none; /* Hide icons for cleaner text display */
+    display: none;
 }
 
-.forecast-day {
+.forecast-card p {
+    margin: 0;
     font-weight: bold;
     color: var(--primary-color);
-    margin: 0;
 }
 
-.forecast-temp {
-    font-weight: bold;
-    color: var(--accent-color);
-}
-
-/* Spotlight Specifics */
+/* Spotlights Section */
 .spotlights-section {
     background-color: transparent;
     border: none;
@@ -448,31 +424,28 @@ footer {
 }
 
 .spotlight-card {
-    background-color: #fff;
-    border: 2px solid #eee;
+    background-color: var(--card-bg);
+    border: 2px solid var(--border-light);
     border-radius: 8px;
     padding: 0;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 6px var(--shadow-light);
     display: grid;
     grid-template-columns: 200px 1fr;
     gap: 0;
-    align-items: start;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .spotlight-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 12px var(--shadow-medium);
 }
 
 .spotlight-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    margin: 0;
     border-radius: 8px 0 0 8px;
-    border: none;
     grid-row: 1 / -1;
 }
 
@@ -487,36 +460,26 @@ footer {
     margin: 0 0 1rem 0;
     color: var(--primary-color);
     font-size: 1.3rem;
-    font-weight: bold;
 }
 
 .spotlight-card p {
     margin: 0.3rem 0;
     font-size: 0.95rem;
-    color: var(--text-color);
 }
 
 .spotlight-card strong {
-    display: none; /* Hide the "Phone:" and "Address:" labels for cleaner look */
+    display: none;
 }
 
 .spotlight-card a {
-    display: inline-block;
-    padding: 0;
-    background-color: transparent;
     color: #0066cc;
     text-decoration: none;
-    font-weight: normal;
-    font-size: 0.95rem;
-    border-radius: 0;
     transition: color 0.3s ease;
     margin-top: 0.5rem;
 }
 
 .spotlight-card a:hover {
     color: var(--primary-color);
-    background-color: transparent;
-    transform: none;
     text-decoration: underline;
 }
 
@@ -533,7 +496,19 @@ footer {
     width: fit-content;
 }
 
-/* Tablet and up: Three columns for top row */
+/* Tablet Layout */
+@media (min-width: 500px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .directory-header h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Tablet and Desktop Spotlight Layout */
 @media (min-width: 768px) {
     .home-grid {
         display: grid;
@@ -541,31 +516,21 @@ footer {
         gap: 1.5rem;
     }
 
-    /* Hero full width */
     .hero {
         grid-column: 1 / -1;
     }
 
-    /* Create a wrapper for the three-column layout */
-    .top-row {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
-        grid-column: 1 / -1;
-    }
-
-    /* Spotlights full width below */
     .spotlights-section {
         grid-column: 1 / -1;
     }
 
     .spotlight-grid {
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
 
     .spotlight-card {
-        flex: 1;
         grid-template-columns: 1fr;
         grid-template-rows: 200px auto;
     }
@@ -573,6 +538,7 @@ footer {
     .spotlight-card img {
         grid-row: 1;
         height: 200px;
+        border-radius: 8px 8px 0 0;
     }
 
     .spotlight-info {
