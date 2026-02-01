@@ -195,7 +195,7 @@ footer {
 .footer-section h3 {
     margin-top: 0;
     color: var(--secondary-color);
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
 }
 
 .social-icons {
