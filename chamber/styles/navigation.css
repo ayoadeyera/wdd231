@@ -1,3 +1,19 @@
+:root {
+    --primary-color: #2E1A47;
+    --secondary-color: #F7D36F;
+    --accent-color: #8b0000;
+    --text-color: #333333;
+    --light-bg: #f9f7f2;
+    --card-bg: #ffffff;
+    --border-light: #ddd;
+    --border-medium: #ccc;
+    --border-dark: #999;
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --shadow-medium: rgba(0, 0, 0, 0.15);
+    --heading-font: 'Noto Serif', serif;
+    --body-font: 'Noto Sans', sans-serif;
+}
+
 /* Mobile navigation (default) */
 
 /* Hamburger button */
@@ -45,7 +61,7 @@ nav a {
     padding: 1rem;
     text-align: center;
     text-decoration: none;
-    color: var(--white);
+    color: var(--border-medium);
     transition: 0.3s;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
