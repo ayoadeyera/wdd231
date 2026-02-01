@@ -83,8 +83,7 @@ nav a.active {
 
     nav a:hover {
         color: var(--primary-color);
-        text-decoration: underline;
-        text-decoration-color: var(--secondary-color);
+        text-decoration:none;
         text-decoration-thickness: 3px;
     }
 
