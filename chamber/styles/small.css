@@ -412,7 +412,7 @@ footer {
 
 .spotlights-section h3 {
     text-align: center;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
     font-family: var(--heading-font);
