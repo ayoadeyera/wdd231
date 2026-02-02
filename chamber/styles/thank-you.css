@@ -1,0 +1,246 @@
+/* Thank You Page Styles */
+
+.thankyou-page {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thankyou-container {
+    background-color: var(--card-bg);
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px var(--shadow-medium);
+    text-align: center;
+    animation: fadeInScale 0.6s ease-out;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.success-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 2rem;
+    background-color: #28a745;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    animation: successPulse 1s ease-out;
+}
+
+@keyframes successPulse {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.thankyou-container h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+}
+
+.success-message {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* Application Details */
+.application-details {
+    background-color: var(--light-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.application-details h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.details-list {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.details-list dt {
+    font-weight: bold;
+    color: var(--primary-color);
+    text-align: right;
+}
+
+.details-list dd {
+    margin: 0;
+    color: var(--text-color);
+}
+
+/* Next Steps */
+.next-steps {
+    text-align: left;
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: #f0f8ff;
+    border-left: 4px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.next-steps h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.next-steps ol {
+    padding-left: 1.5rem;
+}
+
+.next-steps li {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px var(--shadow-light);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--card-bg);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px var(--shadow-medium);
+}
+
+.btn-secondary {
+    background-color: var(--card-bg);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: var(--card-bg);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px var(--shadow-medium);
+}
+
+/* Contact Note */
+.contact-note {
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    color: var(--text-color);
+}
+
+.contact-note a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-note a:hover {
+    text-decoration: underline;
+    color: var(--accent-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .thankyou-container {
+        padding: 2rem 1.5rem;
+    }
+
+    .thankyou-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .details-list {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .details-list dt {
+        text-align: left;
+        margin-top: 1rem;
+    }
+
+    .details-list dd {
+        margin-left: 1rem;
+        font-weight: 500;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .thankyou-container {
+        padding: 4rem 3rem;
+    }
+
+    .application-details {
+        padding: 2.5rem;
+    }
+
+    .next-steps {
+        padding: 2.5rem;
+    }
+}

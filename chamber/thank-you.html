@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thank You | Osun Chamber of Commerce</title>
+    <meta name="description"
+        content="Thank you for applying to join the Osun Chamber of Commerce">
+    <meta name="author" content="Ayodeji Solomon Adeyera">
+
+    <meta name="author" content="Ayodeji Solomon Adeyera">
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://ayoadeyera.github.io/wdd231/chamber/thank-you.html">
+    <meta property="og:title" content="Thank You | Osun Chamber of Commerce">
+    <meta property="og:description"
+        content="Thank you for applying to join the Osun Chamber of Commerce">
+    <meta property="og:image" content="http://ayoadeyera.github.io/wdd231/chamber/images/social-share-preview.webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/thank-you.css">
+
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/thank-you.js" defer></script>
+</head>
+
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="images/logo.svg" alt="Osun Chamber of Commerce Logo" width="105" height="105">
+            <h1>Osun Chamber of Commerce</h1>
+        </div>
+        <button id="menu-button" aria-label="Open Menu"></button>
+    </header>
+
+    <nav>
+        <ul id="menu-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <main class="thankyou-page">
+        <div class="thankyou-container">
+            <div class="success-icon">✓</div>
+            
+            <h2>Thank You for Your Application!</h2>
+            
+            <p class="success-message">
+                We've received your membership application and appreciate your interest in joining the Osun Chamber of Commerce.
+            </p>
+
+            <div class="application-details">
+                <h3>Application Summary</h3>
+                <dl class="details-list">
+                    <dt>Name:</dt>
+                    <dd id="display-name"></dd>
+
+                    <dt>Email:</dt>
+                    <dd id="display-email"></dd>
+
+                    <dt>Mobile Phone:</dt>
+                    <dd id="display-mobile"></dd>
+
+                    <dt>Business/Organization:</dt>
+                    <dd id="display-business"></dd>
+
+                    <dt>Application Submitted:</dt>
+                    <dd id="display-timestamp"></dd>
+                </dl>
+            </div>
+
+            <div class="next-steps">
+                <h3>What Happens Next?</h3>
+                <ol>
+                    <li>Our membership team will review your application within 2-3 business days.</li>
+                    <li>You'll receive a confirmation email with membership details and payment instructions.</li>
+                    <li>Once processed, you'll gain immediate access to all membership benefits.</li>
+                    <li>Welcome packet will be sent to your organization's address.</li>
+                </ol>
+            </div>
+
+            <div class="action-buttons">
+                <a href="index.html" class="btn btn-primary">Return to Home</a>
+                <a href="directory.html" class="btn btn-secondary">Browse Members</a>
+            </div>
+
+            <p class="contact-note">
+                Questions? Contact us at <a href="mailto:info@osunchamber.com">info@osunchamber.com</a> or call (234) 800-555-0100
+            </p>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer-grid">
+
+            <div class="footer-section contact-info">
+                <h3>Osun Chamber of Commerce</h3>
+                <p>10 Osogbo Road</p>
+                <p>Osogbo, Osun State 230212</p>
+                <p>info@osunchamber.com</p>
+                <p>(234) 800-555-0100</p>
+            </div>
+
+            <div class="footer-section social-icons">
+                <a href="https://www.linkedin.com/in/solomonadeyera/" target="_blank" aria-label="LinkedIn">
+                    <img src="images/linkedin.svg" alt="LinkedIn Icon">
+                </a>
+                <a href="http://github.com/ayoadeyera/wdd231" target="_blank" aria-label="GitHub">
+                    <img src="images/github.svg" alt="GitHub Icon">
+                </a>
+                <a href="#" aria-label="Twitter">
+                    <img src="images/twitter.svg" alt="Twitter Icon">
+                </a>
+                <a href="#" aria-label="Facebook">
+                    <img src="images/facebook.svg" alt="Facebook Icon">
+                </a>
+            </div>
+
+            <div class="footer-section dev-info">
+                <p>WDD231 Class Project</p>
+                <p>Ayodeji Solomon Adeyera</p>
+                <p>&copy; <span id="currentYear"></span> Osun Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

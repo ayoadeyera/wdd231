@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join Osun Chamber of Commerce</title>
+    <meta name="description"
+        content="Apply for membership with the Osun Chamber of Commerce. Choose from NP, Bronze, Silver, or Gold membership levels.">
+    <meta name="author" content="Ayodeji Solomon Adeyera">
+
+    <meta name="author" content="Ayodeji Solomon Adeyera">
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://ayoadeyera.github.io/wdd231/chamber/join.html">
+    <meta property="og:title" content="Join Osun Chamber of Commerce">
+    <meta property="og:description"
+        content="Apply for chamber membership and unlock business growth opportunities.">
+    <meta property="og:image" content="http://ayoadeyera.github.io/wdd231/chamber/images/social-share-preview.webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="images/logo.svg" alt="Osun Chamber of Commerce Logo" width="105" height="105">
+            <h1>Osun Chamber of Commerce</h1>
+        </div>
+        <button id="menu-button" aria-label="Open Menu"></button>
+    </header>
+
+    <nav>
+        <ul id="menu-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html" class="active">Join</a></li>
+        </ul>
+    </nav>
+
+    <main class="join-page">
+        <h2>Join the Chamber</h2>
+        <p class="intro-text">Become a member of the Osun Chamber of Commerce and unlock opportunities for business growth, networking, and community impact.</p>
+
+        <div class="join-container">
+            <!-- Application Form -->
+            <section class="application-form">
+                <h3>Membership Application</h3>
+                <form method="get" action="thankyou.html">
+                    
+                    <!-- Personal Information -->
+                    <fieldset>
+                        <legend>Applicant Information</legend>
+                        
+                        <label for="first-name">
+                            First Name *
+                            <input type="text" 
+                                   id="first-name" 
+                                   name="first-name" 
+                                   title="Please enter your first name"
+                                   autocomplete="given-name"
+                                   required>
+                        </label>
+
+                        <label for="last-name">
+                            Last Name *
+                            <input type="text" 
+                                   id="last-name" 
+                                   name="last-name" 
+                                   title="Please enter your last name"
+                                   autocomplete="family-name"
+                                   required>
+                        </label>
+
+                        <label for="org-title">
+                            Organizational Title
+                            <input type="text" 
+                                   id="org-title" 
+                                   name="org-title" 
+                                   title="Your title within the organization (minimum 7 characters, letters, hyphens, and spaces only)"
+                                   autocomplete="organization-title"
+                                   pattern="[A-Za-z\s\-]{7,}"
+                                   >
+                        </label>
+
+                        <label for="email">
+                            Email Address *
+                            <input type="email" 
+                                   id="email" 
+                                   name="email" 
+                                   title="Please enter a valid email address"
+                                   autocomplete="email"
+                                   
+                                   required>
+                        </label>
+
+                        <label for="mobile">
+                            Mobile Phone *
+                            <input type="tel" 
+                                   id="mobile" 
+                                   name="mobile" 
+                                   title="Please enter your mobile phone number"
+                                   autocomplete="tel"
+                                   required>
+                        </label>
+                    </fieldset>
+
+                    <!-- Organization Information -->
+                    <fieldset>
+                        <legend>Organization Information</legend>
+                        
+                        <label for="business-name">
+                            Business/Organization Name *
+                            <input type="text" 
+                                   id="business-name" 
+                                   name="business-name" 
+                                   title="Please enter your organization's name"
+                                   autocomplete="organization"
+                                   required>
+                        </label>
+
+                        <label for="membership-level">
+                            Membership Level *
+                            <select id="membership-level" 
+                                    name="membership-level" 
+                                    title="Select your desired membership level"
+                                    required>
+                                <option value="" disabled selected>Select a membership level</option>
+                                <option value="np">NP Membership (Non-Profit - No Fee)</option>
+                                <option value="bronze">Bronze Membership</option>
+                                <option value="silver">Silver Membership</option>
+                                <option value="gold">Gold Membership</option>
+                            </select>
+                        </label>
+
+                        <label for="business-description">
+                            Business/Organization Description
+                            <textarea id="business-description" 
+                                      name="business-description" 
+                                      title="Briefly describe your business or organization"
+                                      rows="5"
+                                      ></textarea>
+                        </label>
+                    </fieldset>
+
+                    <!-- Hidden Timestamp -->
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-btn">Submit Application</button>
+                </form>
+            </section>
+
+            <!-- Membership Level Cards -->
+            <aside class="membership-levels">
+                <h3>Membership Levels</h3>
+                <p class="levels-intro">Choose the membership level that best fits your organization's needs.</p>
+
+                <div class="membership-cards">
+                    <!-- NP Membership Card -->
+                    <div class="membership-card np-card">
+                        <h4>NP Membership</h4>
+                        <p class="price">No Fee</p>
+                        <p class="description">For non-profit organizations</p>
+                        <button type="button" class="info-btn" data-modal="np-modal">Learn More</button>
+                    </div>
+
+                    <!-- Bronze Membership Card -->
+                    <div class="membership-card bronze-card">
+                        <h4>Bronze</h4>
+                        <p class="price">$199/year</p>
+                        <p class="description">Essential benefits package</p>
+                        <button type="button" class="info-btn" data-modal="bronze-modal">Learn More</button>
+                    </div>
+
+                    <!-- Silver Membership Card -->
+                    <div class="membership-card silver-card">
+                        <h4>Silver</h4>
+                        <p class="price">$399/year</p>
+                        <p class="description">Enhanced networking opportunities</p>
+                        <button type="button" class="info-btn" data-modal="silver-modal">Learn More</button>
+                    </div>
+
+                    <!-- Gold Membership Card -->
+                    <div class="membership-card gold-card">
+                        <h4>Gold</h4>
+                        <p class="price">$599/year</p>
+                        <p class="description">Premium benefits & spotlight</p>
+                        <button type="button" class="info-btn" data-modal="gold-modal">Learn More</button>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Modal Dialogs -->
+    
+    <!-- NP Membership Modal -->
+    <dialog id="np-modal" class="membership-modal">
+        <button class="close-modal" aria-label="Close modal">&times;</button>
+        <h3>NP Membership</h3>
+        <p class="modal-price">No Fee</p>
+        <h4>Benefits Include:</h4>
+        <ul>
+            <li>Access to monthly networking events</li>
+            <li>Quarterly newsletter subscription</li>
+            <li>Business directory listing</li>
+            <li>Nonprofit resources and support</li>
+            <li>Community collaboration opportunities</li>
+        </ul>
+        <p class="modal-note">*Exclusively for registered non-profit organizations</p>
+    </dialog>
+
+    <!-- Bronze Membership Modal -->
+    <dialog id="bronze-modal" class="membership-modal">
+        <button class="close-modal" aria-label="Close modal">&times;</button>
+        <h3>Bronze Membership</h3>
+        <p class="modal-price">$199/year</p>
+        <h4>Benefits Include:</h4>
+        <ul>
+            <li>All NP Membership benefits</li>
+            <li>Discounted event tickets (10% off)</li>
+            <li>Access to business workshops and training</li>
+            <li>Member-to-member discounts</li>
+            <li>Ribbon cutting ceremony assistance</li>
+            <li>Monthly business spotlight consideration</li>
+        </ul>
+    </dialog>
+
+    <!-- Silver Membership Modal -->
+    <dialog id="silver-modal" class="membership-modal">
+        <button class="close-modal" aria-label="Close modal">&times;</button>
+        <h3>Silver Membership</h3>
+        <p class="modal-price">$399/year</p>
+        <h4>Benefits Include:</h4>
+        <ul>
+            <li>All Bronze Membership benefits</li>
+            <li>Enhanced event discounts (20% off)</li>
+            <li>Featured business directory listing</li>
+            <li>Quarterly spotlight on chamber homepage</li>
+            <li>Free booth at chamber expo</li>
+            <li>Access to exclusive networking events</li>
+            <li>Social media promotion (quarterly)</li>
+            <li>Referral program participation</li>
+        </ul>
+    </dialog>
+
+    <!-- Gold Membership Modal -->
+    <dialog id="gold-modal" class="membership-modal">
+        <button class="close-modal" aria-label="Close modal">&times;</button>
+        <h3>Gold Membership</h3>
+        <p class="modal-price">$599/year</p>
+        <h4>Benefits Include:</h4>
+        <ul>
+            <li>All Silver Membership benefits</li>
+            <li>Premium event discounts (30% off)</li>
+            <li>Priority homepage spotlight position</li>
+            <li>Monthly social media features</li>
+            <li>Premium booth location at expo</li>
+            <li>Speaking opportunities at events</li>
+            <li>VIP networking reception invitations</li>
+            <li>One-on-one business consulting session</li>
+            <li>Chamber awards consideration</li>
+            <li>Logo placement on chamber marketing materials</li>
+        </ul>
+    </dialog>
+
+    <footer>
+        <div class="footer-grid">
+
+            <div class="footer-section contact-info">
+                <h3>Osun Chamber of Commerce</h3>
+                <p>10 Osogbo Road</p>
+                <p>Osogbo, Osun State 230212</p>
+                <p>info@osunchamber.com</p>
+                <p>(234) 800-555-0100</p>
+            </div>
+
+            <div class="footer-section social-icons">
+                <a href="https://www.linkedin.com/in/solomonadeyera/" target="_blank" aria-label="LinkedIn">
+                    <img src="images/linkedin.svg" alt="LinkedIn Icon">
+                </a>
+                <a href="http://github.com/ayoadeyera/wdd231" target="_blank" aria-label="GitHub">
+                    <img src="images/github.svg" alt="GitHub Icon">
+                </a>
+                <a href="#" aria-label="Twitter">
+                    <img src="images/twitter.svg" alt="Twitter Icon">
+                </a>
+                <a href="#" aria-label="Facebook">
+                    <img src="images/facebook.svg" alt="Facebook Icon">
+                </a>
+            </div>
+
+            <div class="footer-section dev-info">
+                <p>WDD231 Class Project</p>
+                <p>Ayodeji Solomon Adeyera</p>
+                <p>&copy; <span id="currentYear"></span> Osun Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
