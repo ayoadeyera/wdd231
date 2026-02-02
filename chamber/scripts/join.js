@@ -45,7 +45,7 @@ modals.forEach(modal => {
     });
 });
 
-// Close modal with Escape key (built-in, but we can add custom behavior)
+// Close modal with Escape key
 modals.forEach(modal => {
     modal.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
