@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Modal functionality
+// Modal jfunctionality
 const modals = document.querySelectorAll('.membership-modal');
 const infoButtons = document.querySelectorAll('.info-btn');
 const closeButtons = document.querySelectorAll('.close-modal');
