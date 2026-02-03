@@ -280,7 +280,7 @@
     .discover-sidebar { grid-area: sidebar; }
     .items-grid { grid-area: grid; }
 
-    /* Items grid - single column */
+    /* Items grid - single column, all stacked */
     .items-grid {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -329,15 +329,18 @@
     .discover-sidebar { grid-area: sidebar; }
     .items-grid { grid-area: grid; }
 
-    /* Items grid - 2 columns with interesting layout */
+    /* Items grid - single column, full width cards */
     .items-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         grid-template-areas:
-            "item1 item2"
-            "item3 item3"
-            "item4 item5"
-            "item6 item6"
-            "item7 item8";
+            "item1"
+            "item2"
+            "item3"
+            "item4"
+            "item5"
+            "item6"
+            "item7"
+            "item8";
     }
 
     .item-card:nth-child(1) { grid-area: item1; }
@@ -376,14 +379,14 @@
     .discover-sidebar { grid-area: sidebar; }
     .items-grid { grid-area: grid; }
 
-    /* Items grid - 3 columns with varied layout */
+    /* Items grid - 2 columns with varied layout like your example */
     .items-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
-            "item1 item1 item2"
-            "item3 item4 item4"
-            "item5 item6 item7"
-            "item8 item8 item8";
+            "item1 item2"
+            "item3 item4"
+            "item5 item6"
+            "item7 item8";
     }
 
     .item-card:nth-child(1) { grid-area: item1; }
