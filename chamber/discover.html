@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join Osun Chamber of Commerce</title>
+    <meta name="description"
+        content="Apply for membership with the Osun Chamber of Commerce. Choose from NP, Bronze, Silver, or Gold membership levels.">
+    <meta name="author" content="Ayodeji Solomon Adeyera">
+
+    <meta name="author" content="Ayodeji Solomon Adeyera">
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://ayoadeyera.github.io/wdd231/chamber/join.html">
+    <meta property="og:title" content="Join Osun Chamber of Commerce">
+    <meta property="og:description"
+        content="Apply for chamber membership and unlock business growth opportunities.">
+    <meta property="og:image" content="http://ayoadeyera.github.io/wdd231/chamber/images/social-share-preview.webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="images/logo.svg" alt="Osun Chamber of Commerce Logo" width="105" height="105">
+            <h1>Osun Chamber of Commerce</h1>
+        </div>
+        <button id="menu-button" aria-label="Open Menu"></button>
+    </header>
+
+    <nav>
+        <ul id="menu-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html" class="active">Join</a></li>
+        </ul>
+    </nav>
+
+    <main class="discover-page">
+        <!-- Visit Message Banner -->
+        <div id="visit-message" class="visit-banner">
+            <p id="visit-text"></p>
+            <button id="close-banner" class="close-btn" aria-label="Close message">&times;</button>
+        </div>
+
+        <!-- Page Header -->
+        <section class="discover-header">
+            <h2>Discover Osun State</h2>
+            <p class="intro-text">
+                Explore the rich cultural heritage, natural wonders, and vibrant attractions that make Osun State 
+                a premier destination for business, tourism, and community engagement.
+            </p>
+        </section>
+
+        <!-- Sidebar with Demographics -->
+        <aside class="discover-sidebar">
+            <div class="sidebar-card">
+                <h3>About Osun State</h3>
+                <dl class="demographics">
+                    <dt>Capital:</dt>
+                    <dd>Osogbo</dd>
+
+                    <dt>Population:</dt>
+                    <dd>~4.7 million (2021)</dd>
+
+                    <dt>Area:</dt>
+                    <dd>9,251 km² (3,572 sq mi)</dd>
+
+                    <dt>Established:</dt>
+                    <dd>August 27, 1991</dd>
+
+                    <dt>Local Govts:</dt>
+                    <dd>30 LGAs</dd>
+
+                    <dt>Major Languages:</dt>
+                    <dd>Yoruba, English</dd>
+
+                    <dt>Economy:</dt>
+                    <dd>Agriculture, Trade, Tourism</dd>
+                </dl>
+            </div>
+
+            <div class="sidebar-card">
+                <h3>Why Osun?</h3>
+                <ul class="benefits-list">
+                    <li>UNESCO World Heritage Sites</li>
+                    <li>Rich Yoruba Cultural Heritage</li>
+                    <li>Natural Tourist Attractions</li>
+                    <li>Growing Business Opportunities</li>
+                    <li>Strategic Geographic Location</li>
+                    <li>Vibrant Arts & Crafts Scene</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Items of Interest Grid -->
+        <section class="items-grid" id="items-grid">
+            <!-- Cards will be dynamically generated here -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+
+            <div class="footer-section contact-info">
+                <h3>Osun Chamber of Commerce</h3>
+                <p>10 Osogbo Road</p>
+                <p>Osogbo, Osun State 230212</p>
+                <p>info@osunchamber.com</p>
+                <p>(234) 800-555-0100</p>
+            </div>
+
+            <div class="footer-section social-icons">
+                <a href="https://www.linkedin.com/in/solomonadeyera/" target="_blank" aria-label="LinkedIn">
+                    <img src="images/linkedin.svg" alt="LinkedIn Icon">
+                </a>
+                <a href="http://github.com/ayoadeyera/wdd231" target="_blank" aria-label="GitHub">
+                    <img src="images/github.svg" alt="GitHub Icon">
+                </a>
+                <a href="#" aria-label="Twitter">
+                    <img src="images/twitter.svg" alt="Twitter Icon">
+                </a>
+                <a href="#" aria-label="Facebook">
+                    <img src="images/facebook.svg" alt="Facebook Icon">
+                </a>
+            </div>
+
+            <div class="footer-section dev-info">
+                <p>WDD231 Class Project</p>
+                <p>Ayodeji Solomon Adeyera</p>
+                <p>&copy; <span id="currentYear"></span> Osun Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
