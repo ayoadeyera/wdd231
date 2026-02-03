@@ -261,7 +261,7 @@
     box-shadow: 0 4px 8px var(--shadow-medium);
 }
 
-/* ==================== RESPONSIVE LAYOUTS WITH GRID AREAS ==================== */
+/* == RESPONSIVE LAYOUTS WITH GRID AREAS == */
 
 /* SMALL SCREENS: 320px - 640px (Mobile) */
 @media (min-width: 320px) and (max-width: 640px) {
@@ -280,7 +280,7 @@
     .discover-sidebar { grid-area: sidebar; }
     .items-grid { grid-area: grid; }
 
-    /* Items grid - single column, all stacked */
+    /* Items grid - single column*/
     .items-grid {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -312,7 +312,7 @@
     }
 }
 
-/* MEDIUM SCREENS: 641px - 1024px (Tablet) */
+/* MEDIUM SCREENS: 641px - 1024px */
 @media (min-width: 641px) and (max-width: 1024px) {
     .discover-page {
         display: grid;
@@ -362,7 +362,7 @@
     }
 }
 
-/* LARGE SCREENS: 1025px and above (Desktop) */
+/* LARGE SCREENS: */
 @media (min-width: 1025px) {
     .discover-page {
         display: grid;
@@ -379,7 +379,7 @@
     .discover-sidebar { grid-area: sidebar; }
     .items-grid { grid-area: grid; }
 
-    /* Items grid - 2 columns with varied layout like your example */
+    /* Items grid - 2 columns */
     .items-grid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
@@ -411,14 +411,14 @@
         top: 1rem;
     }
 
-    /* Enhanced hover effects for desktop */
+    /* hover effects for desktop */
     .item-card:hover .card-image {
         transform: scale(1.15);
         filter: brightness(1.15) contrast(1.1);
     }
 }
 
-/* ==================== ADDITIONAL CSS EFFECTS ==================== */
+/* == CSS EFFECTS ==*/
 
 /* Image overlay effect on hover (desktop only) */
 @media (min-width: 641px) {
