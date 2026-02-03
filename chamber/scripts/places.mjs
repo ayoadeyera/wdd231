@@ -1,7 +1,5 @@
 /**
  * Osun State Items of Interest Data
- * Image Dimensions: 300px x 200px
- * Format: WebP
  */
 
 export const itemsOfInterest = [
