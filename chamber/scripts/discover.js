@@ -1,5 +1,5 @@
 // Import items of interest data
-import { itemsOfInterest } from '../data/places.mjs';
+import { itemsOfInterest } from './places.mjs';
 
 // Constants
 const MILLISECONDS_PER_DAY = 1000 * 60 * 60 * 24;
@@ -98,7 +98,7 @@ function createItemCard(item) {
     figure.classList.add('card-figure');
 
     const img = document.createElement('img');
-    img.src = `images/discover/${item.image}`;
+    img.src = `images/${item.image}`;
     img.alt = item.name;
     img.loading = 'lazy';
     img.width = 300;

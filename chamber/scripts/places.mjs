@@ -27,7 +27,7 @@ export const itemsOfInterest = [
     "address": "Enuwa Square, Ile-Ife, Osun State",
     "description": "The historic and spiritual seat of the Ooni, the paramount ruler of the Yoruba race, rich in architectural and cultural history.",
     "estimated_cost": "Free (Tip of ₦1,000+ for Palace Guides recommended)",
-    "image": "ooni_palace.webp"
+    "image": "ooni-palace.webp"
   },
   {
     "id": 4,
@@ -35,7 +35,7 @@ export const itemsOfInterest = [
     "address": "Enuwa Square, Ile-Ife, Osun State",
     "description": "A repository of ancient Ife art, displaying the iconic bronze and terracotta heads that redefined African art history.",
     "estimated_cost": "₦1,000 - ₦2,000",
-    "image": "ife_museum.webp"
+    "image": "ife-museum.webp"
   },
   {
     "id": 5,
@@ -43,7 +43,7 @@ export const itemsOfInterest = [
     "address": "Old Ede Road, Osogbo, Osun State",
     "description": "Founded by Nike Davies-Okundaye, this center is a vibrant workshop for traditional batik, adire textile, and wood carving.",
     "estimated_cost": "Free (Donations or purchases encouraged)",
-    "image": "nike_art_centre.webp"
+    "image": "nike-art-centre.webp"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@ export const itemsOfInterest = [
     "address": "Enuwa, Ile-Ife, Osun State",
     "description": "Standing at 42 feet, this is the tallest statue in Nigeria, commemorating the heroism of Queen Moremi Ajasoro.",
     "estimated_cost": "₦1,000",
-    "image": "moremi_statue.webp"
+    "image": "moremi-statue.webp"
   },
   {
     "id": 7,
@@ -59,7 +59,7 @@ export const itemsOfInterest = [
     "address": "Ibokun Road, Ada, Osun State",
     "description": "A serene getaway featuring a professional 18-hole golf course, offering a perfect blend of leisure and business networking.",
     "estimated_cost": "₦5,000 (Day Pass/Golf), Rooms from ₦22,000",
-    "image": "miccom_resort.webp"
+    "image": "miccom-resort.webp"
   },
   {
     "id": 8,
@@ -67,6 +67,6 @@ export const itemsOfInterest = [
     "address": "Imesi-Ile / Igbajo, Boluwaduro LGA, Osun State",
     "description": "The historic site where the 1886 Peace Treaty was signed, ending the 16-year Yoruba civil war.",
     "estimated_cost": "Free (Local guide tips recommended)",
-    "image": "kiriji_site.webp"
+    "image": "kiriji-site.webp"
   }
 ];
