@@ -10,8 +10,7 @@
 /* ==================== VISIT BANNER ==================== */
 
 .visit-banner {
-    background: var(--primary-color);
-    color: var(--card-bg);
+    background: var(--primary-color);    
     color: var(--card-bg);
     padding: 1rem 1.5rem;
     margin-bottom: 2rem;
