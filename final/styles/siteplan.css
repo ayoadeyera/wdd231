@@ -149,7 +149,6 @@ body {
     height: 600px;
     background: radial-gradient(circle, rgba(0, 102, 204, 0.08) 0%, transparent 70%);
     border-radius: 50%;
-    pointer-events: none;
 }
 
 .hero-content {
@@ -317,7 +316,7 @@ body {
     margin-top: var(--spacing-xl);
 }
 
-.page-structure h3 {
+.page-structure h2 {
     font-size: 2rem;
     margin-bottom: var(--spacing-lg);
     text-align: center;
@@ -359,7 +358,7 @@ body {
     opacity: 0.6;
 }
 
-.page-card h4 {
+.page-card h3 {
     font-size: 1.5rem;
     margin-bottom: var(--spacing-sm);
     font-weight: 600;
@@ -412,7 +411,7 @@ body {
     transform: translateY(-4px);
 }
 
-.audience-card h4 {
+.audience-card h3 {
     font-size: 1.25rem;
     margin-bottom: var(--spacing-sm);
     font-weight: 600;
