@@ -149,7 +149,7 @@ function createItemCard(item) {
 }
 
 /**
- * Display all items of interest
+ * Display all items of interest 
  */
 function displayItems() {
     const grid = document.getElementById('items-grid');
