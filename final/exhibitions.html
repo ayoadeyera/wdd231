@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibitions | GoArt Collective</title>
+    <meta name="description" content="Browse current and upcoming art exhibitions at GoArt Collective. Filter by category and discover contemporary works from talented local and international artists.">
+    <meta name="author" content="Solomon Adeyera">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Exhibitions | GoArt Collective">
+    <meta property="og:description" content="Explore our curated collection of contemporary art exhibitions featuring diverse styles and mediums.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://goartcollective.com/exhibitions.html">
+    <meta property="og:image" content="https://goartcollective.com/images/og-exhibitions.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.ico">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <!-- JavaScript Modules -->
+    <script type="module" src="scripts/exhibitions.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🎨</span>
+                <span class="logo-text">GoArt</span>
+            </a>
+            
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="exhibitions.html" class="nav-link active" aria-current="page">Exhibitions</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="index.html#newsletter" class="nav-link nav-cta">Newsletter</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Exhibitions</h1>
+                <p>Explore our current and upcoming exhibitions featuring diverse artistic voices</p>
+            </div>
+        </section>
+
+        <!-- Filter and Sort Controls -->
+        <section class="exhibitions-controls">
+            <div class="container">
+                <div class="controls-wrapper">
+                    <div class="filter-group">
+                        <label for="categoryFilter">Filter by Category:</label>
+                        <select id="categoryFilter" class="filter-select">
+                            <option value="all">All Categories</option>
+                            <option value="Contemporary">Contemporary</option>
+                            <option value="Abstract">Abstract</option>
+                            <option value="Sculpture">Sculpture</option>
+                            <option value="Photography">Photography</option>
+                            <option value="Digital Art">Digital Art</option>
+                            <option value="Mixed Media">Mixed Media</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="sortBy">Sort by:</label>
+                        <select id="sortBy" class="filter-select">
+                            <option value="featured">Featured First</option>
+                            <option value="date">Start Date</option>
+                            <option value="title">Title (A-Z)</option>
+                            <option value="artist">Artist Name</option>
+                        </select>
+                    </div>
+                    
+                    <div class="view-toggle">
+                        <button id="gridView" class="view-btn active" aria-label="Grid view" title="Grid view">
+                            <span class="grid-icon">⊞</span>
+                        </button>
+                        <button id="listView" class="view-btn" aria-label="List view" title="List view">
+                            <span class="list-icon">☰</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="results-count">
+                    <p><span id="exhibitionCount">0</span> exhibitions found</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exhibitions Grid/List -->
+        <section class="exhibitions-section">
+            <div class="container">
+                <div class="exhibitions-container grid-view" id="exhibitionsContainer">
+                    <!-- Dynamically populated via JavaScript -->
+                </div>
+                
+                <div class="loading" id="loadingIndicator" hidden>
+                    <div class="spinner"></div>
+                    <p>Loading exhibitions...</p>
+                </div>
+                
+                <div class="no-results" id="noResults" hidden>
+                    <p>No exhibitions found matching your criteria.</p>
+                    <button class="btn btn-secondary" id="resetFilters">Reset Filters</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>GoArt Collective</h3>
+                <p>Elevating local art through digital excellence</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Visit</h4>
+                <address>
+                    123 Gallery Street<br>
+                    Osogbo, Nigeria<br>
+                    <a href="tel:+2341234567890">+234 123 456 7890</a><br>
+                    <a href="mailto:info@goartcollective.com">info@goartcollective.com</a>
+                </address>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Explore</h4>
+                <ul class="footer-links">
+                    <li><a href="exhibitions.html">Exhibitions</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="about.html#contact">Contact</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Hours</h4>
+                <p>Tuesday - Saturday<br>10:00 AM - 6:00 PM</p>
+                <p>Sunday<br>12:00 PM - 5:00 PM</p>
+                <p>Closed Mondays</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> GoArt Collective. Designed by Solomon Adeyera</p>
+            <p class="last-modified">Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <!-- Modal Dialog for Exhibition Details -->
+    <div class="modal" id="exhibitionModal" role="dialog" aria-labelledby="exhibitionModalTitle" aria-hidden="true">
+        <div class="modal-content modal-large">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div id="exhibitionModalContent">
+                <!-- Content populated dynamically -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
