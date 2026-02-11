@@ -38,18 +38,18 @@
                 <span class="logo-text">GoArt</span>
             </a>
             
-            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+            <button class="ga-hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             
             <nav class="main-nav" id="mainNav">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
-                    <li><a href="exhibitions.html" class="nav-link">Exhibitions</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="#newsletter" class="nav-link nav-cta">Newsletter</a></li>
+                <ul class="ga-nav-menu">
+                    <li><a href="index.html" class="ga-nav-item ga-nav-item--active" aria-current="page">Home</a></li>
+                    <li><a href="exhibitions.html" class="ga-nav-item">Exhibitions</a></li>
+                    <li><a href="about.html" class="ga-nav-item">About</a></li>
+                    <li><a href="#newsletter" class="ga-nav-item ga-nav-item--highlight">Newsletter</a></li>
                 </ul>
             </nav>
         </div>
@@ -63,8 +63,8 @@
                 <h1 class="hero-title">Contemporary Voices in Modern Art</h1>
                 <p class="hero-description">Experience a curated collection of groundbreaking works from emerging and established artists. This exhibition explores the intersection of tradition and innovation in contemporary art, featuring pieces that challenge perspectives and inspire dialogue.</p>
                 <div class="hero-actions">
-                    <a href="exhibitions.html" class="btn btn-primary">View Exhibition</a>
-                    <a href="#upcoming" class="btn btn-secondary">Plan Your Visit</a>
+                    <a href="exhibitions.html" class="ga-button ga-button--primary">View Exhibition</a>
+                    <a href="#upcoming" class="ga-button ga-button--secondary">Plan Your Visit</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -74,17 +74,17 @@
 
         <!-- Current Exhibitions Preview -->
         <section class="exhibitions-preview" id="current-exhibitions">
-            <div class="site-container">
-                <div class="section-header">
-                    <h2>Current Exhibitions</h2>
-                    <p class="section-subtitle">Discover what's on view now</p>
+            <div class="ga-wrapper">
+                <div class="ga-section-header">
+                    <h2 class="ga-section-header__title">Current Exhibitions</h2>
+                    <p class="ga-section-header__subtitle">Discover what's on view now</p>
                 </div>
                 
                 <div class="exhibitions-grid" id="currentExhibitionsGrid">
                     <!-- Dynamically populated via JavaScript -->
                 </div>
                 
-                <div class="section-footer">
+                <div class="ga-section-actions">
                     <a href="exhibitions.html" class="link-arrow">View All Exhibitions</a>
                 </div>
             </div>
@@ -92,7 +92,7 @@
 
         <!-- Stats Section -->
         <section class="stats">
-            <div class="site-container">
+            <div class="ga-wrapper">
                 <div class="stats-grid">
                     <div class="stat-item">
                         <div class="stat-icon">🎨</div>
@@ -120,7 +120,7 @@
 
         <!-- About Preview -->
         <section class="about-preview">
-            <div class="site-container">
+            <div class="ga-wrapper">
                 <div class="about-grid">
                     <div class="about-image">
                         <img src="images/gallery-interior.webp" alt="Modern art gallery interior with white walls and natural lighting" loading="lazy">
@@ -129,7 +129,7 @@
                         <h2>About Our Gallery</h2>
                         <p>Founded in 2001, GoArt Collective has been a cornerstone of the local art community, dedicated to showcasing exceptional contemporary art and fostering meaningful connections between artists and art enthusiasts.</p>
                         <p>Our mission is to provide a platform for both emerging and established artists to share their vision, while creating an accessible and welcoming space for all who appreciate the transformative power of art.</p>
-                        <a href="about.html" class="btn btn-outline">Learn More About Us</a>
+                        <a href="about.html" class="ga-button ga-button--outline">Learn More About Us</a>
                     </div>
                 </div>
             </div>
@@ -137,10 +137,10 @@
 
         <!-- Upcoming Events -->
         <section class="upcoming-events" id="upcoming">
-            <div class="site-container">
-                <div class="section-header">
-                    <h2>Upcoming Events</h2>
-                    <p class="section-subtitle">Join us for exclusive gallery experiences</p>
+            <div class="ga-wrapper">
+                <div class="ga-section-header">
+                    <h2 class="ga-section-header__title">Upcoming Events</h2>
+                    <p class="ga-section-header__subtitle">Join us for exclusive gallery experiences</p>
                 </div>
                 
                 <div class="events-grid">
@@ -154,7 +154,7 @@
                             <p>Join us for an intimate conversation with featured artists discussing their creative process and inspiration behind their latest works.</p>
                             <p class="event-time">🕐 6:00 PM - 8:00 PM</p>
                         </div>
-                        <button class="btn btn-small" data-event="talk">Register</button>
+                        <button class="ga-button ga-button--small" data-event="talk">Register</button>
                     </div>
                     
                     <div class="event-card">
@@ -167,7 +167,7 @@
                             <p>Celebrate the opening of our new exhibition with cocktails, live music, and exclusive first looks at groundbreaking new pieces.</p>
                             <p class="event-time">🕐 7:00 PM - 10:00 PM</p>
                         </div>
-                        <button class="btn btn-small" data-event="reception">Register</button>
+                        <button class="ga-button ga-button--small" data-event="reception">Register</button>
                     </div>
                     
                     <div class="event-card">
@@ -180,7 +180,7 @@
                             <p>A hands-on workshop for beginners exploring abstract painting techniques. All materials provided.</p>
                             <p class="event-time">🕐 10:00 AM - 1:00 PM</p>
                         </div>
-                        <button class="btn btn-small" data-event="workshop">Register</button>
+                        <button class="ga-button ga-button--small" data-event="workshop">Register</button>
                     </div>
                 </div>
             </div>
@@ -188,25 +188,25 @@
 
         <!-- Newsletter Section -->
         <section class="newsletter" id="newsletter">
-            <div class="site-container">
+            <div class="ga-wrapper">
                 <div class="newsletter-content">
                     <h2>Stay Connected</h2>
                     <p>Subscribe to our newsletter for exclusive exhibition previews, artist insights, and upcoming events.</p>
                     
                     <form class="newsletter-form" id="newsletterForm" action="form-handler.html" method="GET">
-                        <div class="form-group">
-                            <label for="name" class="visually-hidden">Full Name</label>
-                            <input type="text" id="name" name="name" placeholder="Full Name" required>
+                        <div class="ga-form-field">
+                            <label for="name" class="visually-hidden ga-form-label">Full Name</label>
+                            <input type="text" id="name" name="name" class="ga-form-input" placeholder="Full Name" required>
                         </div>
                         
-                        <div class="form-group">
-                            <label for="email" class="visually-hidden">Email Address</label>
-                            <input type="email" id="email" name="email" placeholder="Email Address" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        <div class="ga-form-field">
+                            <label for="email" class="visually-hidden ga-form-label">Email Address</label>
+                            <input type="email" id="email" name="email" class="ga-form-input" placeholder="Email Address" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                         </div>
                         
-                        <div class="form-group">
-                            <label for="interests">Interests</label>
-                            <select id="interests" name="interests" required>
+                        <div class="ga-form-field">
+                            <label for="interests" class="ga-form-label">Interests</label>
+                            <select id="interests" name="interests" class="ga-form-select" required>
                                 <option value="">Select your interests</option>
                                 <option value="contemporary">Contemporary Art</option>
                                 <option value="abstract">Abstract</option>
@@ -217,12 +217,12 @@
                             </select>
                         </div>
                         
-                        <div class="form-group-checkbox">
-                            <input type="checkbox" id="updates" name="updates" value="yes">
-                            <label for="updates">I'd like to receive event invitations and special offers</label>
+                        <div class="ga-form-checkbox-group">
+                            <input type="checkbox" id="updates" name="updates" class="ga-form-checkbox" value="yes">
+                            <label for="updates" class="ga-form-checkbox-label">I'd like to receive event invitations and special offers</label>
                         </div>
                         
-                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                        <button type="submit" class="ga-button ga-button--primary">Subscribe</button>
                     </form>
                 </div>
             </div>
@@ -242,7 +242,7 @@
                     123 Gallery Street<br>
                     Osogbo, Nigeria<br>
                     <a href="tel:+2341234567890">+234 123 456 7890</a><br>
-                    <a href="mailto:info@goartcollective.com">info@goartcollective.com</a>
+                    <a href="/cdn-cgi/l/email-protection#3950575f56795e56584b4d5a5655555c5a4d504f5c175a5654"><span class="__cf_email__" data-cfemail="741d1a121b34131b150600171b18181117001d02115a171b19">[email&#160;protected]</span></a>
                 </address>
             </div>
             
@@ -271,14 +271,17 @@
     </footer>
 
     <!-- Modal Dialog -->
-    <div class="modal" id="eventModal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
-        <div class="modal-content">
-            <button class="modal-close" aria-label="Close modal">&times;</button>
-            <h2 id="modalTitle">Event Registration</h2>
-            <div id="modalBody">
+    <div class="ga-modal" id="eventModal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="ga-modal__container">
+            <button class="ga-modal__close" aria-label="Close modal">&times;</button>
+            <h2 id="modalTitle" class="ga-modal__title">Event Registration</h2>
+                <div id="modalBody" class="ga-modal__body">
                 <!-- Content populated dynamically -->
             </div>
         </div>
     </div>
 </body>
 </html>
+
+
+

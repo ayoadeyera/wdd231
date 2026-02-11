@@ -38,18 +38,18 @@
                 <span class="logo-text">GoArt</span>
             </a>
             
-            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+            <button class="ga-hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             
             <nav class="main-nav" id="mainNav">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="exhibitions.html" class="nav-link active" aria-current="page">Exhibitions</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="index.html#newsletter" class="nav-link nav-cta">Newsletter</a></li>
+                <ul class="ga-nav-menu">
+                    <li><a href="index.html" class="ga-nav-item">Home</a></li>
+                    <li><a href="exhibitions.html" class="ga-nav-item">Exhibitions</a></li>
+                    <li><a href="about.html" class="ga-nav-item ga-nav-item--active" aria-current="page">About</a></li>
+                    <li><a href="index.html#newsletter" class="ga-nav-item ga-nav-item--highlight">Newsletter</a></li>
                 </ul>
             </nav>
         </div>
@@ -58,70 +58,175 @@
     <main>
         <!-- Page Header -->
         <section class="page-header">
-            <div class="site-container">
-                <h1>Exhibitions</h1>
-                <p>Explore our current and upcoming exhibitions featuring diverse artistic voices</p>
+            <div class="ga-wrapper">
+                <h1>About GoArt Collective</h1>
+                <p>A cornerstone of the local art community since 2001</p>
             </div>
         </section>
 
-        <!-- Filter and Sort Controls -->
-        <section class="exhibitions-controls">
-            <div class="site-container">
-                <div class="controls-wrapper">
-                    <div class="filter-group">
-                        <label for="categoryFilter">Filter by Category:</label>
-                        <select id="categoryFilter" class="filter-select">
-                            <option value="all">All Categories</option>
-                            <option value="Contemporary">Contemporary</option>
-                            <option value="Abstract">Abstract</option>
-                            <option value="Sculpture">Sculpture</option>
-                            <option value="Photography">Photography</option>
-                            <option value="Digital Art">Digital Art</option>
-                            <option value="Mixed Media">Mixed Media</option>
-                        </select>
+        <!-- Mission Section -->
+        <section class="about-mission">
+            <div class="ga-wrapper">
+                <div class="mission-grid">
+                    <div class="mission-image">
+                        <img src="images/gallery-exterior.webp" alt="GoArt Collective gallery exterior with modern architecture" loading="lazy">
                     </div>
-                    
-                    <div class="filter-group">
-                        <label for="sortBy">Sort by:</label>
-                        <select id="sortBy" class="filter-select">
-                            <option value="featured">Featured First</option>
-                            <option value="date">Start Date</option>
-                            <option value="title">Title (A-Z)</option>
-                            <option value="artist">Artist Name</option>
-                        </select>
+                    <div class="mission-content">
+                        <h2>Our Mission</h2>
+                        <p>GoArt Collective serves as a digital bridge between local artists and art enthusiasts, providing a curated platform to discover, explore, and engage with contemporary visual art exhibitions in our community.</p>
+                        <p>We believe in the transformative power of art to inspire dialogue, challenge perspectives, and create meaningful connections between diverse communities.</p>
                     </div>
-                    
-                    <div class="view-toggle">
-                        <button id="gridView" class="view-btn active" aria-label="Grid view" title="Grid view">
-                            <span class="grid-icon">⊞</span>
-                        </button>
-                        <button id="listView" class="view-btn" aria-label="List view" title="List view">
-                            <span class="list-icon">☰</span>
-                        </button>
-                    </div>
-                </div>
-                
-                <div class="results-count">
-                    <p><span id="exhibitionCount">0</span> exhibitions found</p>
                 </div>
             </div>
         </section>
 
-        <!-- Exhibitions Grid/List -->
-        <section class="exhibitions-section">
-            <div class="site-container">
-                <div class="exhibitions-container grid-view" id="exhibitionsContainer">
-                    <!-- Dynamically populated via JavaScript -->
+        <!-- History Section -->
+        <section class="about-history">
+            <div class="ga-wrapper">
+                <h2>Our Story</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>2001 - Foundation</h3>
+                            <p>GoArt Collective was founded by a group of passionate art enthusiasts committed to creating a space where contemporary art could thrive.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>2010 - Expansion</h3>
+                            <p>Expanded our gallery space to accommodate larger installations and increased our focus on digital art and mixed media exhibitions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>2020 - Digital Transformation</h3>
+                            <p>Launched our online platform to make art more accessible during challenging times, reaching audiences worldwide.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>2026 - Present</h3>
+                            <p>Continuing to showcase groundbreaking exhibitions and foster the next generation of contemporary artists.</p>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="loading" id="loadingIndicator" hidden>
-                    <div class="spinner"></div>
-                    <p>Loading exhibitions...</p>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="about-team">
+            <div class="ga-wrapper">
+                <h2>Our Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="team-image">
+                            <img src="images/team-1.webp" alt="Portrait of Segun Oni, Gallery Director" loading="lazy">
+                        </div>
+                        <h3>Segun Oni</h3>
+                        <p class="team-role">Gallery Director</p>
+                        <p>With over 20 years of experience in the art world, Segun brings a wealth of knowledge and passion to GoArt Collective.</p>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="team-image">
+                            <img src="images/team-2.webp" alt="Portrait of Amara Nwosu, Curator" loading="lazy">
+                        </div>
+                        <h3>Amara Nwosu</h3>
+                        <p class="team-role">Chief Curator</p>
+                        <p>Amara's innovative approach to curation has helped establish GoArt as a leading contemporary art destination.</p>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="team-image">
+                            <img src="images/team-3.webp" alt="Portrait of Sofia Ifayemi, Education Director" loading="lazy">
+                        </div>
+                        <h3>Sofia Ifayemi</h3>
+                        <p class="team-role">Education Director</p>
+                        <p>Sofia develops engaging programs that make contemporary art accessible to audiences of all ages and backgrounds.</p>
+                    </div>
                 </div>
-                
-                <div class="no-results" id="noResults" hidden>
-                    <p>No exhibitions found matching your criteria.</p>
-                    <button class="btn btn-secondary" id="resetFilters">Reset Filters</button>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="about-contact" id="contact">
+            <div class="ga-wrapper">
+                <h2>Get in Touch</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h3>Visit Us</h3>
+                            <address>
+                                123 Gallery Street<br>
+                                Osogbo, Osun State<br>
+                                Nigeria
+                            </address>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>Hours</h3>
+                            <p><strong>Tuesday - Saturday:</strong> 10:00 AM - 6:00 PM</p>
+                            <p><strong>Sunday:</strong> 12:00 PM - 5:00 PM</p>
+                            <p><strong>Closed Mondays</strong></p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>Contact</h3>
+                            <p>Phone: <a href="tel:+2341234567890">+234 123 456 7890</a></p>
+                            <p>Email: <a href="/cdn-cgi/l/email-protection#5e373038311e39313f2c2a3d3132323b3d2a37283b703d3133"><span class="__cf_email__" data-cfemail="fe97909891be99919f8c8a9d9192929b9d8a97889bd09d9193">[email&#160;protected]</span></a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-wrapper">
+                        <h3>Send Us a Message</h3>
+                        <form class="contact-form" id="contactForm" action="form-handler.html" method="GET">
+                            <div class="ga-form-field">
+                                <label for="contactName" class="ga-form-label">Name *</label>
+                                <input type="text" id="contactName" name="name" class="ga-form-input" required>
+                            </div>
+                            
+                            <div class="ga-form-field">
+                                <label for="contactEmail" class="ga-form-label">Email *</label>
+                                <input type="email" id="contactEmail" name="email" class="ga-form-input" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                            </div>
+                            
+                            <div class="ga-form-field">
+                                <label for="contactPhone" class="ga-form-label">Phone</label>
+                                <input type="tel" id="contactPhone" name="phone" class="ga-form-input" pattern="[0-9+\-\s()]+">
+                            </div>
+                            
+                            <div class="ga-form-field">
+                                <label for="subject" class="ga-form-label">Subject *</label>
+                                <select id="subject" name="subject" class="ga-form-select" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="exhibition">Exhibition Information</option>
+                                    <option value="partnership">Partnership Opportunities</option>
+                                    <option value="artist">Artist Submissions</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="ga-form-field">
+                                <label for="message" class="ga-form-label">Message *</label>
+                                <textarea id="message" name="message" rows="5" class="ga-form-textarea" required minlength="10"></textarea>
+                            </div>
+                            
+                            <div class="ga-form-checkbox-group">
+                                <input type="checkbox" id="copyMe" name="copy" class="ga-form-checkbox" value="yes">
+                                <label for="copyMe" class="ga-form-checkbox-label">Send me a copy of this message</label>
+                            </div>
+                            
+                            <button type="submit" class="ga-button ga-button--primary">Send Message</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -140,7 +245,7 @@
                     123 Gallery Street<br>
                     Osogbo, Nigeria<br>
                     <a href="tel:+2341234567890">+234 123 456 7890</a><br>
-                    <a href="mailto:info@goartcollective.com">info@goartcollective.com</a>
+                    <a href="/cdn-cgi/l/email-protection#0b62656d644b6c646a797f686467676e687f627d6e25686466"><span class="__cf_email__" data-cfemail="b8d1d6ded7f8dfd7d9caccdbd7d4d4dddbccd1cedd96dbd7d5">[email&#160;protected]</span></a>
                 </address>
             </div>
             
