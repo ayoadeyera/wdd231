@@ -1,0 +1,346 @@
+/* =====================================================
+   GoArt Collective - Large Screens (Desktop)
+   Styles for screens 1024px and wider
+   ===================================================== */
+
+@media (min-width: 1024px) {
+    
+    /* === TYPOGRAPHY === */
+    h1 { font-size: 3.5rem; }
+    h2 { font-size: 2.5rem; }
+    h3 { font-size: 2rem; }
+    
+    /* === WRAPPER === */
+    .ga-wrapper {
+        padding: 0 var(--spacing-md);
+    }
+    
+    /* === HERO SECTION === */
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-xl);
+        align-items: center;
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .hero-content {
+        margin-bottom: 0;
+    }
+    
+    .hero-title {
+        font-size: 4rem;
+        line-height: 1.1;
+    }
+    
+    .hero-description {
+        font-size: 1.375rem;
+        line-height: 1.8;
+    }
+    
+    .hero-image {
+        margin-top: 0;
+    }
+    
+    /* === GRID LAYOUTS === */
+    .exhibitions-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-md);
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-lg);
+    }
+    
+    /* === FOOTER === */
+    .footer-container {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    /* === SECTIONS === */
+    .ga-section-header__title {
+        font-size: 2.5rem;
+    }
+    
+    .ga-section-header__subtitle {
+        font-size: 1.25rem;
+    }
+    
+    /* === EXHIBITIONS === */
+    .exhibitions-container.grid-view {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-lg);
+    }
+    
+    .exhibitions-container.list-view .exhibition-card {
+        grid-template-columns: 400px 1fr;
+    }
+    
+    .exhibitions-container.list-view .exhibition-card img {
+        height: 250px;
+    }
+    
+    /* === EXHIBITION CONTROLS === */
+    .controls-wrapper {
+        flex-wrap: nowrap;
+    }
+    
+    /* === EVENT CARDS === */
+    .event-card {
+        padding: var(--spacing-lg);
+    }
+    
+    .event-date {
+        min-width: 90px;
+        padding: var(--spacing-md);
+    }
+    
+    .event-day {
+        font-size: 2.5rem;
+    }
+    
+    .event-month {
+        font-size: 1rem;
+    }
+    
+    .event-info h3 {
+        font-size: 1.5rem;
+    }
+    
+    /* === ABOUT PREVIEW === */
+    .about-preview {
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .about-grid {
+        gap: var(--spacing-xl);
+    }
+    
+    .about-content h2 {
+        font-size: 2.5rem;
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .about-content p {
+        font-size: 1.125rem;
+        line-height: 1.8;
+    }
+    
+    /* === MISSION & HISTORY === */
+    .mission-grid {
+        gap: var(--spacing-xl);
+    }
+    
+    .mission-content h2 {
+        font-size: 2.5rem;
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .mission-content p {
+        font-size: 1.125rem;
+        line-height: 1.8;
+    }
+    
+    /* === TEAM === */
+    .team-member {
+        transition: var(--transition);
+    }
+    
+    .team-member:hover {
+        transform: translateY(-8px);
+    }
+    
+    .team-image img {
+        width: 200px;
+        height: 200px;
+        transition: var(--transition);
+    }
+    
+    .team-member:hover .team-image img {
+        box-shadow: 0 8px 24px rgba(0, 102, 204, 0.2);
+    }
+    
+    /* === CONTACT === */
+    .contact-grid {
+        gap: var(--spacing-xl);
+    }
+    
+    /* === TIMELINE === */
+    .timeline {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .timeline-item {
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .timeline-content {
+        padding-left: var(--spacing-md);
+    }
+    
+    .timeline-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .timeline-content p {
+        font-size: 1.125rem;
+        line-height: 1.8;
+    }
+    
+    /* === NEWSLETTER === */
+    .newsletter {
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .newsletter-content {
+        max-width: 700px;
+    }
+    
+    .newsletter h2 {
+        font-size: 2.5rem;
+    }
+    
+    .newsletter p {
+        font-size: 1.25rem;
+    }
+    
+    /* === MODAL === */
+    .ga-modal__container {
+        padding: var(--spacing-lg);
+        max-width: 600px;
+    }
+    
+    .ga-modal__container--large {
+        max-width: 900px;
+    }
+    
+    .ga-modal__title {
+        font-size: 2rem;
+        padding-right: 3rem;
+    }
+    
+    .ga-modal__body {
+        font-size: 1.125rem;
+    }
+    
+    /* === PAGE HEADER === */
+    .page-header {
+        padding: var(--spacing-xl) 0 var(--spacing-lg);
+    }
+    
+    .page-header h1 {
+        font-size: 4rem;
+    }
+    
+    .page-header p {
+        font-size: 1.5rem;
+    }
+    
+    /* === HOVER EFFECTS === */
+    .exhibition-card {
+        transition: var(--transition);
+    }
+    
+    .exhibition-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+    }
+    
+    .stat-item {
+        transition: var(--transition);
+    }
+    
+    .stat-item:hover {
+        transform: scale(1.05);
+    }
+    
+    /* === BUTTONS === */
+    .ga-button {
+        font-size: 1.125rem;
+        padding: 1rem 2rem;
+    }
+    
+    .ga-button--small {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+    }
+    
+    /* === EXHIBITION CARD CONTENT === */
+    .exhibition-card-content {
+        padding: var(--spacing-md);
+    }
+    
+    .exhibition-card-content h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .exhibition-card-content p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+    
+    /* === SMOOTH SCROLL OFFSET === */
+    html {
+        scroll-padding-top: var(--header-height);
+    }
+    
+    /* === LINK ARROW === */
+    .link-arrow {
+        font-size: 1.125rem;
+    }
+}
+
+/* === EXTRA LARGE SCREENS === */
+@media (min-width: 1440px) {
+    
+    /* === TYPOGRAPHY === */
+    h1 { font-size: 4rem; }
+    h2 { font-size: 3rem; }
+    
+    /* === HERO === */
+    .hero-title {
+        font-size: 4.5rem;
+    }
+    
+    .hero-description {
+        font-size: 1.5rem;
+    }
+    
+    /* === WRAPPER === */
+    .ga-wrapper {
+        max-width: 1400px;
+    }
+    
+    /* === SECTIONS === */
+    .exhibitions-preview,
+    .upcoming-events,
+    .about-preview {
+        padding: var(--spacing-xl) 0;
+    }
+    
+    /* === GRIDS === */
+    .exhibitions-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .exhibitions-container.grid-view {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .events-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

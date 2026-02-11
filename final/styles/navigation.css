@@ -1,0 +1,158 @@
+/* =====================================================
+   GoArt Collective - Navigation Styles
+   GA Custom Navigation System (Framework-Free)
+   ===================================================== */
+
+/* === MAIN NAVIGATION === */
+.main-nav {
+    display: none; /* Hidden on mobile by default */
+}
+
+.main-nav.active {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--color-pure-white);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: var(--spacing-sm);
+}
+
+/* === GA CUSTOM NAVIGATION MENU === */
+.ga-nav-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+/* === GA CUSTOM NAVIGATION ITEMS === */
+.ga-nav-item {
+    display: block;
+    padding: var(--spacing-sm);
+    color: var(--color-primary-text);
+    font-weight: 500;
+    transition: var(--transition);
+    border-radius: 4px;
+}
+
+.ga-nav-item:hover {
+    color: var(--color-accent);
+    background-color: rgba(0, 102, 204, 0.05);
+}
+
+/* Active Navigation Item */
+.ga-nav-item--active {
+    color: var(--color-accent);
+    font-weight: 600;
+    position: relative;
+}
+
+.ga-nav-item--active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: var(--spacing-sm);
+    right: var(--spacing-sm);
+    height: 3px;
+    background-color: var(--color-accent);
+}
+
+/* Highlighted Navigation Item (CTA) */
+.ga-nav-item--highlight {
+    background-color: var(--color-accent);
+    color: var(--color-pure-white);
+    padding: 0.75rem 1.25rem;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: var(--spacing-sm);
+}
+
+.ga-nav-item--highlight:hover {
+    background-color: #0052A3;
+    color: var(--color-pure-white);
+    transform: translateY(-2px);
+}
+
+/* === GA CUSTOM HAMBURGER MENU === */
+.ga-hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+}
+
+.ga-hamburger span {
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-primary-text);
+    border-radius: 10px;
+    transition: var(--transition);
+    transform-origin: center;
+}
+
+/* Hamburger Animation - Active State */
+.ga-hamburger.active span:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+}
+
+.ga-hamburger.active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.ga-hamburger.active span:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+}
+
+/* === MEDIUM SCREENS === */
+@media (min-width: 768px) {
+    .ga-hamburger {
+        display: none; /* Hide hamburger on larger screens */
+    }
+    
+    .main-nav {
+        display: block; /* Show nav on larger screens */
+        position: static;
+        box-shadow: none;
+        padding: 0;
+    }
+    
+    .ga-nav-menu {
+        flex-direction: row;
+        gap: var(--spacing-sm);
+    }
+    
+    .ga-nav-item {
+        padding: 0.5rem 1rem;
+    }
+    
+    .ga-nav-item--active::after {
+        left: 1rem;
+        right: 1rem;
+    }
+    
+    .ga-nav-item--highlight {
+        margin-top: 0;
+        padding: 0.5rem 1.25rem;
+    }
+}
+
+/* === LARGE SCREENS === */
+@media (min-width: 1024px) {
+    .ga-nav-menu {
+        gap: var(--spacing-md);
+    }
+    
+    .ga-nav-item {
+        padding: 0.75rem 1.25rem;
+        font-size: 1rem;
+    }
+}
