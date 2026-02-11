@@ -12,6 +12,7 @@
     --color-shark-black: #1D1D1F;
     --color-action-blue: #0066CC;
     --color-terracotta: #D4623F;
+    --color-terracotta-dark: #A83D1F; /* CONTRAST FIX: Darker terracotta for buttons */
     --color-graphite: #86868B;
     
     /* CONTRAST FIX: Darker gray for better readability (4.5:1 ratio) */
@@ -148,12 +149,12 @@ p {
 }
 
 .ga-button--secondary {
-    background-color: var(--color-highlight);
+    background-color: var(--color-terracotta-dark); /* CONTRAST FIX: Darker color */
     color: var(--color-pure-white);
 }
 
 .ga-button--secondary:hover {
-    background-color: #B84F2F;
+    background-color: #8A2F15; /* Even darker on hover */
     color: var(--color-pure-white);
     transform: translateY(-2px);
 }
@@ -460,6 +461,11 @@ p {
     color: var(--color-pure-white); /* For newsletter form on dark background */
 }
 
+/* CONTRAST FIX: Visually hidden labels don't need color (they're hidden) */
+.visually-hidden.ga-form-label {
+    color: transparent; /* Prevents contrast calculation issues */
+}
+
 .contact-form .ga-form-label {
     color: var(--color-primary-text); /* For contact form on light background */
 }
@@ -646,13 +652,31 @@ p {
 .ga-modal__title {
     margin-bottom: var(--spacing-sm);
     font-size: 1.5rem;
-    color: var(--color-primary-text); /* CONTRAST FIX */
+    color: var(--color-shark-black); /* CONTRAST FIX: Explicit dark color */
     padding-right: 2rem;
 }
 
 .ga-modal__body {
     margin-top: var(--spacing-sm);
-    color: var(--color-primary-text); /* CONTRAST FIX */
+    color: var(--color-shark-black); /* CONTRAST FIX: Explicit dark color */
+}
+
+/* CONTRAST FIX: Ensure all text inside modal container is dark */
+.ga-modal__container * {
+    color: var(--color-shark-black);
+}
+
+/* Override for specific elements that need different colors */
+.ga-modal__container .ga-button--primary {
+    color: var(--color-pure-white);
+}
+
+.ga-modal__container .ga-button--secondary {
+    color: var(--color-pure-white);
+}
+
+.ga-modal__close {
+    color: var(--color-secondary-text) !important;
 }
 
 /* === PAGE HEADER === */
