@@ -549,7 +549,6 @@ a.ga-button--outline:hover {
 .ga-form-checkbox-label {
     cursor: pointer;
     user-select: none;
-    color: var(--color-pure-white); /* For newsletter */
 }
 
 .contact-form .ga-form-checkbox-label {
