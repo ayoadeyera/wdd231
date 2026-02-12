@@ -5,14 +5,19 @@
 
 /* === CSS VARIABLES === */
 :root {
-    /* Colors */
+     /* Colors */
+
+    --color-action-blue: #004C99;
+    --color-terracotta-dark: #8B3518;
+    --color-accessible-gray: #4A4A4A;
+
+
+
+     
     --color-pure-white: #FFFFFF;
     --color-athens-gray: #FAFAFA;
     --color-shark-black: #1D1D1F;
 
-    --color-action-blue: #005BB5; 
-    --color-terracotta-dark: #A13C1C;
-    --color-accessible-gray: #575757;
     --color-light-canvas: #F5F5F7;
 
     /* --color-terracotta: #D4623F; */
@@ -32,6 +37,8 @@
     --color-secondary-text: var(--color-accessible-gray);
     --color-accent: var(--color-action-blue);
     --color-highlight: var(--color-terracotta-dark);
+
+
     
     /* Typography */
     --font-display: 'Playfair Display', Georgia, serif;
