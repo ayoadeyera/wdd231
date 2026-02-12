@@ -212,9 +212,12 @@
     }
     
     .exhibition-badge.featured {
-        background-color: var(--color-highlight);
+        background-color: var(--color-highlight); /* Now points to #A13C1C */
+    color: var(--color-pure-white);
     }
     
+
+
     /* === NEWSLETTER FORM === */
     .newsletter-form {
         display: grid;

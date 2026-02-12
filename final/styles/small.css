@@ -10,10 +10,12 @@
     --color-athens-gray: #FAFAFA;
     --color-light-canvas: #F5F5F7;
     --color-shark-black: #1D1D1F;
-    --color-action-blue: #0066CC;
-    --color-terracotta: #D4623F;
+    --color-action-blue: #005BB5;
+    --color-terracotta-dark: #A13C1C;
+    /* --color-terracotta: #D4623F; */
+    
     --color-terracotta-dark: #A83D1F; /* CONTRAST FIX: Darker terracotta for buttons */
-    --color-graphite: #86868B;
+    --color-accessible-gray: #575757;
     
     /* CONTRAST FIX: Darker gray for better readability (4.5:1 ratio) */
     --color-accessible-gray: #5F5F5F;
@@ -23,9 +25,9 @@
     --color-card-bg: var(--color-pure-white);
     --color-dark-bg: var(--color-shark-black);
     --color-primary-text: var(--color-shark-black);
-    --color-secondary-text: var(--color-accessible-gray); /* CHANGED for contrast */
+    --color-secondary-text: var(--color-accessible-gray);
     --color-accent: var(--color-action-blue);
-    --color-highlight: var(--color-terracotta);
+    --color-highlight: var(--color-terracotta-dark);
     
     /* Typography */
     --font-display: 'Playfair Display', Georgia, serif;
@@ -227,15 +229,19 @@ p {
 
 .hero-content {
     margin-bottom: var(--spacing-md);
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
 }
 
 .hero-eyebrow {
     font-size: 0.875rem;
-    font-weight: 600;
-    color: var(--color-accent);
+    /* font-weight: 600; */
+    /* color: var(--color-accent); */
     text-transform: uppercase;
     letter-spacing: 0.1em;
     margin-bottom: 0.5rem;
+
+    color: var(--color-highlight);
+    font-weight: 700;
 }
 
 .hero-title {
@@ -548,9 +554,9 @@ p {
     margin-bottom: 0.5rem;
 }
 
-.footer-brand p {
+/* .footer-brand p {
     color: rgba(255, 255, 255, 0.7);
-}
+} */
 
 .footer-section h4 {
     color: var(--color-pure-white);
@@ -591,6 +597,11 @@ p {
     margin-top: 0.5rem;
 }
 
+.footer-brand p,
+.footer-bottom p,
+.footer-section p {
+    color: rgba(255, 255, 255, 0.8); 
+}
 /* === GA CUSTOM MODAL === */
 .ga-modal {
     display: none;
@@ -676,9 +687,14 @@ p {
 }
 
 .ga-modal__close {
-    color: var(--color-secondary-text) !important;
+    color: var(--color-secondary-text);
 }
 
+.ga-modal .ga-modal__container .ga-modal__close {
+    color: var(--color-secondary-text);
+    background: transparent;
+    border: none;
+}
 /* === PAGE HEADER === */
 .page-header {
     padding: var(--spacing-lg) 0 var(--spacing-md);
