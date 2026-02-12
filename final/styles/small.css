@@ -626,7 +626,7 @@ a.ga-button--outline:hover {
     color: rgba(255, 255, 255, 0.8); 
 }
 /* === GA CUSTOM MODAL === */
-/* === GA CUSTOM MODAL === */
+
 .ga-modal {
     display: none;
     position: fixed;
@@ -656,7 +656,7 @@ a.ga-button--outline:hover {
     overflow-y: auto;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     /* Explicitly set dark text on white background */
-    color: var(--color-shark-black);
+    /* color: var(--color-shark-black); */
 }
 
 .ga-modal__container--large {
