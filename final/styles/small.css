@@ -457,10 +457,10 @@ a.ga-button--outline:hover {
 
 /* === NEWSLETTER === */
 /* Force all newsletter text to be white */
-.newsletter,
+/* .newsletter,
 .newsletter *:not(input):not(select):not(textarea):not(button) {
     color: var(--color-pure-white);
-}
+} */
 
 /* Explicitly set form input colors */
 .newsletter input,
