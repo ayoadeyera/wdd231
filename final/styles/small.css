@@ -626,6 +626,7 @@ a.ga-button--outline:hover {
     color: rgba(255, 255, 255, 0.8); 
 }
 /* === GA CUSTOM MODAL === */
+/* === GA CUSTOM MODAL === */
 .ga-modal {
     display: none;
     position: fixed;
@@ -633,10 +634,11 @@ a.ga-button--outline:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.85); /* CONTRAST FIX: Darker overlay */
+    background-color: rgba(0, 0, 0, 0.85);
     z-index: 1000;
     justify-content: center;
     align-items: center;
+    /* Don't set color here - no text on overlay */
 }
 
 .ga-modal[aria-hidden="false"] {
@@ -644,7 +646,7 @@ a.ga-button--outline:hover {
 }
 
 .ga-modal__container {
-    background-color: var(--color-pure-white); /* CONTRAST FIX: White background */
+    background-color: var(--color-pure-white);
     padding: var(--spacing-md);
     border-radius: 8px;
     max-width: 500px;
@@ -653,6 +655,8 @@ a.ga-button--outline:hover {
     max-height: 90vh;
     overflow-y: auto;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    /* Explicitly set dark text on white background */
+    color: var(--color-shark-black);
 }
 
 .ga-modal__container--large {
@@ -667,7 +671,7 @@ a.ga-button--outline:hover {
     border: none;
     font-size: 2rem;
     cursor: pointer;
-    color: var(--color-secondary-text);
+    color: var(--color-accessible-gray);
     line-height: 1;
     padding: 0;
     width: 32px;
@@ -679,41 +683,44 @@ a.ga-button--outline:hover {
 }
 
 .ga-modal__close:hover {
-    color: var(--color-primary-text);
+    color: var(--color-shark-black);
     transform: rotate(90deg);
 }
 
 .ga-modal__title {
     margin-bottom: var(--spacing-sm);
     font-size: 1.5rem;
-    color: var(--color-shark-black); /* CONTRAST FIX: Explicit dark color */
+    color: var(--color-shark-black);
     padding-right: 2rem;
 }
 
 .ga-modal__body {
     margin-top: var(--spacing-sm);
-    color: var(--color-shark-black); /* CONTRAST FIX: Explicit dark color */
-}
-
-/* CONTRAST FIX: Ensure all text inside modal container is dark */
-.ga-modal__container * {
     color: var(--color-shark-black);
 }
 
-/* Override for specific elements that need different colors */
+/* Ensure all modal content uses proper colors */
+.ga-modal__container h1,
+.ga-modal__container h2,
+.ga-modal__container h3,
+.ga-modal__container h4,
+.ga-modal__container h5,
+.ga-modal__container h6 {
+    color: var(--color-shark-black);
+}
+
+.ga-modal__container p,
+.ga-modal__container div:not(.ga-button) {
+    color: var(--color-shark-black);
+}
+
+/* Button text overrides */
 .ga-modal__container .ga-button--primary {
     color: var(--color-pure-white);
 }
 
 .ga-modal__container .ga-button--secondary {
     color: var(--color-pure-white);
-}
-
-
-.ga-modal .ga-modal__container {
-    color: var(--color-secondary-text);
-    background: transparent;
-    border: none;
 }
 /* === PAGE HEADER === */
 .page-header {
