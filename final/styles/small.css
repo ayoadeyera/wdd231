@@ -67,6 +67,7 @@ body {
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    
 }
 
 img {
@@ -225,6 +226,7 @@ p {
 .hero {
     padding: var(--spacing-md) 0;
     background: linear-gradient(135deg, #F5F5F7 0%, #FAFAFA 100%);
+    
 }
 
 .hero-content {
@@ -540,6 +542,7 @@ p {
     background-color: var(--color-dark-bg);
     color: var(--color-pure-white);
     padding: var(--spacing-lg) 0 var(--spacing-md);
+    
 }
 
 .footer-container {
@@ -547,6 +550,7 @@ p {
     grid-template-columns: 1fr;
     gap: var(--spacing-md);
     margin-bottom: var(--spacing-md);
+
 }
 
 .footer-brand h3 {
