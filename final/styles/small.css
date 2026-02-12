@@ -245,7 +245,7 @@ p {
 }
 
 .hero-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-family: var(--font-display);
     color: var(--color-primary-text);
     margin-bottom: var(--spacing-sm);
@@ -253,7 +253,7 @@ p {
 }
 
 .hero-description {
-    font-size: 1.125rem;
+    font-size: 1rem;
     color: var(--color-secondary-text); /* CONTRAST FIX: Uses accessible gray */
     margin-bottom: var(--spacing-md);
     line-height: 1.7;
