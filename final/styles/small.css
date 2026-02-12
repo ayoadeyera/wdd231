@@ -91,7 +91,10 @@ a:hover {
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 0 var(--spacing-sm);
+    color: inherit;
 }
+
+
 
 .visually-hidden {
     position: absolute;
