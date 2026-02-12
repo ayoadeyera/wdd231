@@ -17,8 +17,13 @@
 
     /* --color-terracotta: #D4623F; */
     
-     
-        
+    
+    --color-accent: var(--color-action-blue);
+    --color-highlight: var(--color-terracotta-dark);
+    
+    
+    
+    
     /* Semantic Colors */
     --color-primary-bg: var(--color-athens-gray);
     --color-card-bg: var(--color-pure-white);
@@ -867,21 +872,6 @@ a.ga-button--outline:hover {
     transform: translateX(4px);
 }
 
-
-/* Increase specificity by being more descriptive, not using !important */
-body a, 
-.ga-nav-item, 
-.hero-eyebrow {
-    color: var(--color-highlight);
-    font-weight: 600; /* Bolder text is easier to read at lower contrast */
-}
-
-.ga-button--secondary {
-    /* Ensure secondary buttons don't fade into the background */
-    border: 2px solid var(--color-secondary-text);
-    color: var(--color-secondary-text);
-    background: transparent;
-}
 
 
 
