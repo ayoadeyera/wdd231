@@ -14,11 +14,10 @@
     --color-terracotta-dark: #A13C1C;
     /* --color-terracotta: #D4623F; */
     
-    --color-terracotta-dark: #A83D1F; /* CONTRAST FIX: Darker terracotta for buttons */
+    
     --color-accessible-gray: #575757;
     
-    /* CONTRAST FIX: Darker gray for better readability (4.5:1 ratio) */
-    --color-accessible-gray: #5F5F5F;
+    
     
     /* Semantic Colors */
     --color-primary-bg: var(--color-athens-gray);
@@ -690,11 +689,8 @@ p {
     color: var(--color-pure-white);
 }
 
-.ga-modal__close {
-    color: var(--color-secondary-text);
-}
 
-.ga-modal .ga-modal__container .ga-modal__close {
+.ga-modal .ga-modal__container {
     color: var(--color-secondary-text);
     background: transparent;
     border: none;
