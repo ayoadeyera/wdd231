@@ -8,17 +8,17 @@
     /* Colors */
     --color-pure-white: #FFFFFF;
     --color-athens-gray: #FAFAFA;
-    --color-light-canvas: #F5F5F7;
     --color-shark-black: #1D1D1F;
-    --color-action-blue: #005BB5;
+
+    --color-action-blue: #005BB5; 
     --color-terracotta-dark: #A13C1C;
+    --color-accessible-gray: #575757;
+    --color-light-canvas: #F5F5F7;
+
     /* --color-terracotta: #D4623F; */
     
-    
-    --color-accessible-gray: #575757;
-    
-    
-    
+     
+        
     /* Semantic Colors */
     --color-primary-bg: var(--color-athens-gray);
     --color-card-bg: var(--color-pure-white);
@@ -867,6 +867,21 @@ a.ga-button--outline:hover {
     transform: translateX(4px);
 }
 
+
+/* Increase specificity by being more descriptive, not using !important */
+body a, 
+.ga-nav-item, 
+.hero-eyebrow {
+    color: var(--color-highlight);
+    font-weight: 600; /* Bolder text is easier to read at lower contrast */
+}
+
+.ga-button--secondary {
+    /* Ensure secondary buttons don't fade into the background */
+    border: 2px solid var(--color-secondary-text);
+    color: var(--color-secondary-text);
+    background: transparent;
+}
 
 
 

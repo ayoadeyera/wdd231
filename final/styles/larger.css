@@ -346,3 +346,11 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+
+
+/* Replace line 679 with this: */
+div.ga-modal__container button.ga-modal__close {
+    color: var(--color-secondary-text);
+    opacity: 1; /* Ensure it's fully visible */
+}
