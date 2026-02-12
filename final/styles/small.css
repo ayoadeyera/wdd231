@@ -488,7 +488,7 @@ a.ga-button--outline:hover {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 500;
-    color: var(--color-pure-white); /* For newsletter form on dark background */
+
 }
 
 /* CONTRAST FIX: Visually hidden labels don't need color (they're hidden) */
