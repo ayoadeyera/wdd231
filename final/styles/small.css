@@ -177,6 +177,35 @@ p {
     font-size: 0.875rem;
 }
 
+
+
+/* Add specificity to override link colors on buttons */
+a.ga-button--primary,
+a.ga-button--secondary,
+a.ga-button--outline,
+a.ga-button--small {
+    color: inherit; /* Inherit from .ga-button-- variant */
+}
+
+/* Make sure button variants explicitly set color */
+a.ga-button--primary {
+    color: var(--color-pure-white);
+}
+
+a.ga-button--secondary {
+    color: var(--color-pure-white);
+}
+
+a.ga-button--outline {
+    color: var(--color-accent);
+}
+
+a.ga-button--outline:hover {
+    color: var(--color-pure-white);
+}
+
+
+
 /* === HEADER === */
 .site-header {
     background-color: var(--color-pure-white);
@@ -427,32 +456,23 @@ p {
 }
 
 /* === NEWSLETTER === */
-.newsletter {
-    padding: var(--spacing-lg) 0;
-    background-color: var(--color-accent); /* CONTRAST FIX: Changed from light gray to accent color */
-    color: var(--color-pure-white); /* CONTRAST FIX: White text on blue background */
+/* Force all newsletter text to be white */
+.newsletter,
+.newsletter *:not(input):not(select):not(textarea):not(button) {
+    color: var(--color-pure-white);
 }
 
-.newsletter-content {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
+/* Explicitly set form input colors */
+.newsletter input,
+.newsletter select,
+.newsletter textarea {
+    color: var(--color-primary-text);
+    background-color: var(--color-pure-white);
 }
 
-.newsletter h2 {
-    color: var(--color-pure-white); /* CONTRAST FIX */
-    margin-bottom: var(--spacing-sm);
-}
-
-.newsletter p {
-    color: rgba(255, 255, 255, 0.9); /* CONTRAST FIX */
-    margin-bottom: var(--spacing-md);
-}
-
-.newsletter-form {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-sm);
+/* Button text should stay white */
+.newsletter button {
+    color: var(--color-pure-white);
 }
 
 /* === GA CUSTOM FORMS === */
@@ -712,6 +732,10 @@ p {
     color: var(--color-secondary-text);
 }
 
+
+
+
+
 /* === ABOUT SECTIONS === */
 .about-mission,
 .about-history,
@@ -831,3 +855,7 @@ p {
 .link-arrow:hover::after {
     transform: translateX(4px);
 }
+
+
+
+
