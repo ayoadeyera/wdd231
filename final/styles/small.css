@@ -512,13 +512,13 @@ option {
     color: var(--color-pure-white);
 } */
 
-.newsletter,
-.newsletter-content {
+.newsletter {
     color: var(--color-pure-white);
     background-color: var(--color-accent);
 }
 
 .newsletter-content {
+    color: var(--color-pure-white);
     background-color: var(--color-accent);
 }
 
@@ -533,6 +533,11 @@ option {
 /* Button text should stay white */
 .newsletter button {
     color: var(--color-pure-white);
+}
+
+.newsletter option {
+    color: var(--color-primary-text);
+    background-color: var(--color-pure-white);
 }
 
 /* === GA CUSTOM FORMS === */
