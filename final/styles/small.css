@@ -13,6 +13,7 @@
     --color-pure-white: #FFFFFF;
     --color-athens-gray: #FAFAFA;
     --color-shark-black: #1D1D1F;
+
     --color-light-canvas: #F5F5F7;
 
     /* --color-terracotta: #D4623F; */
@@ -217,14 +218,19 @@ p {
 
 /* Add specificity to override link colors on buttons */
 a.ga-button--primary,
+a.ga-button--secondary,
 a.ga-button--outline,
 a.ga-button--small {
     color: inherit;
     /* Inherit from .ga-button-- variant */
 }
 
-/* Make sure button variants explicitly set color. Let me see */
+/* Make sure button variants explicitly set color */
 a.ga-button--primary {
+    color: var(--color-pure-white);
+}
+
+a.ga-button--secondary {
     color: var(--color-pure-white);
 }
 
@@ -782,7 +788,9 @@ option {
 
 /* .ga-modal__container  */
 
-
+/* .ga-button--secondary {
+    color: var(--color-pure-white);
+} */
 
 /* === PAGE HEADER === */
 .page-header {
