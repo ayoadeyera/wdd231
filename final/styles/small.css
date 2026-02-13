@@ -217,7 +217,6 @@ p {
 
 /* Add specificity to override link colors on buttons */
 a.ga-button--primary,
-a.ga-button--secondary,
 a.ga-button--outline,
 a.ga-button--small {
     color: inherit;
@@ -226,10 +225,6 @@ a.ga-button--small {
 
 /* Make sure button variants explicitly set color */
 a.ga-button--primary {
-    color: var(--color-pure-white);
-}
-
-a.ga-button--secondary {
     color: var(--color-pure-white);
 }
 
