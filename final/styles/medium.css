@@ -219,11 +219,11 @@
 
 
     /* === NEWSLETTER FORM === */
-    .newsletter-form {
+    /* .newsletter-form {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: var(--spacing-sm);
-    }
+    } */
     
     .newsletter-form .ga-form-field:nth-child(1),
     .newsletter-form .ga-form-field:nth-child(2) {
