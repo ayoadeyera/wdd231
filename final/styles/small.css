@@ -727,7 +727,6 @@ option {
     max-height: 90vh;
     overflow-y: auto;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    /* color: var(--color-shark-black); */
     color: var(--color-primary-text);
 }
 
@@ -791,7 +790,9 @@ option {
     color: var(--color-pure-white);
 }
 
-.ga-modal__container .ga-button--secondary {
+/* .ga-modal__container  */
+
+.ga-button--secondary {
     color: var(--color-pure-white);
 }
 
