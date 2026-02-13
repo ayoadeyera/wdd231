@@ -782,9 +782,7 @@ option {
 
 /* .ga-modal__container  */
 
-.ga-button--secondary {
-    color: var(--color-pure-white);
-}
+
 
 /* === PAGE HEADER === */
 .page-header {
