@@ -512,8 +512,13 @@ option {
     color: var(--color-pure-white);
 } */
 
-.newsletter {
+.newsletter,
+.newsletter-content {
     color: var(--color-pure-white);
+    background-color: var(--color-accent);
+}
+
+.newsletter-content {
     background-color: var(--color-accent);
 }
 
@@ -697,6 +702,7 @@ option {
     justify-content: center;
     align-items: center;
     font-size: 0;
+    color: var(--color-pure-white);
 }
 
 
