@@ -940,7 +940,7 @@ option {
 
 
 /* =====================================================
-   Thank You Page Styles
+   Newsletter Thank You Page Styles
    ===================================================== */
 
 /* === THANK YOU SECTION === */
@@ -1032,4 +1032,91 @@ option {
     flex-direction: column;
     gap: var(--spacing-sm);
     margin-top: var(--spacing-lg);
+}
+
+
+
+
+/* =====================================================
+   Contact Thank You Page - Additional Styles
+   ===================================================== */
+
+/* === CONTACT NEXT STEPS === */
+.contact-next-steps {
+    background-color: rgba(0, 102, 204, 0.05);
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    border-left: 4px solid var(--color-accent);
+    margin-bottom: var(--spacing-lg);
+    text-align: left;
+}
+
+.contact-next-steps h3 {
+    font-size: 1.25rem;
+    color: var(--color-primary-text);
+    margin-bottom: var(--spacing-sm);
+}
+
+.contact-next-steps ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contact-next-steps li {
+    padding: 0.5rem 0;
+    padding-left: 1.75rem;
+    position: relative;
+    color: var(--color-secondary-text);
+    line-height: 1.6;
+}
+
+.contact-next-steps li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #22C55E;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.contact-next-steps strong {
+    color: var(--color-primary-text);
+    font-weight: 600;
+}
+
+/* === FULL WIDTH MESSAGE DISPLAY === */
+.detail-item-full {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+}
+
+.detail-item-full .detail-label {
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.detail-item-full .detail-value {
+    display: block;
+    white-space: pre-wrap;
+    line-height: 1.7;
+    padding: var(--spacing-sm);
+    background-color: rgba(29, 29, 31, 0.03);
+    border-radius: 4px;
+}
+
+/* === CONTACT FORM UPDATES === */
+/* Single column layout for contact form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.contact-form .ga-form-field {
+    width: 100%;
+}
+
+.contact-form .ga-button {
+    width: 100%;
+    margin-top: var(--spacing-sm);
 }

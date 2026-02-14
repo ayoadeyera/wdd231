@@ -34,6 +34,28 @@ function setupContactForm() {
         console.log('Contact form submitted');
     });
     
+/**
+ * Initialize contact form timestamp
+ */
+function initContactTimestamp() {
+    const timestampField = document.getElementById('contactTimestamp');
+    
+    if (timestampField) {
+        const now = new Date();
+        const formattedDate = now.toLocaleString('en-US', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit'
+        });
+        
+        timestampField.value = formattedDate;
+    }
+}
+
     // Add real-time validation
     const emailInput = form.querySelector('#contactEmail');
     if (emailInput) {

@@ -255,23 +255,24 @@
     grid-template-columns: 160px 1fr;
 }
     
-    /* === CONTACT FORM === */
-    .contact-form {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: var(--spacing-sm);
+   /* === CONTACT FORM === */
+/* Single column layout - accessibility best practice */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+/* Contact thank you responsive */
+@media (min-width: 768px) {
+    .contact-next-steps {
+        padding: var(--spacing-lg);
     }
     
-    .contact-form .ga-form-field:nth-child(4),
-    .contact-form .ga-form-field:nth-child(5),
-    .contact-form .ga-form-checkbox-group {
-        grid-column: span 2;
+    .contact-next-steps h3 {
+        font-size: 1.5rem;
     }
-    
-    .contact-form .ga-button {
-        grid-column: span 2;
-    }
-    
+}
     /* === PAGE HEADER === */
     .page-header h1 {
         font-size: 3rem;

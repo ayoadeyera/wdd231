@@ -190,25 +190,47 @@
                     
                     <div class="contact-form-wrapper">
                         <h3>Send Us a Message</h3>
-                        <form class="contact-form" id="contactForm" action="form-handler.html" method="GET">
-                            <div class="form-group">
-                                <label for="contactName">Name *</label>
-                                <input type="text" id="contactName" name="name" required>
+                        <form class="contact-form" id="contactForm" action="contact-thankyou.html" method="GET">
+                            <div class="ga-form-field">
+                                <label for="contactName" class="ga-form-label">Full Name *</label>
+                                <input 
+                                    type="text" 
+                                    id="contactName" 
+                                    name="name" 
+                                    class="ga-form-input"
+                                    autocomplete="name"
+                                    required
+                                    aria-required="true">
                             </div>
                             
-                            <div class="form-group">
-                                <label for="contactEmail">Email *</label>
-                                <input type="email" id="contactEmail" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                            <div class="ga-form-field">
+                                <label for="contactEmail" class="ga-form-label">Email Address *</label>
+                                <input 
+                                    type="email" 
+                                    id="contactEmail" 
+                                    name="email" 
+                                    class="ga-form-input"
+                                    autocomplete="email"
+                                    placeholder="example@email.com"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                    required
+                                    aria-required="true">
                             </div>
                             
-                            <div class="form-group">
-                                <label for="contactPhone">Phone</label>
-                                <input type="tel" id="contactPhone" name="phone" pattern="[0-9+\-\s()]+">
+                            <div class="ga-form-field">
+                                <label for="contactPhone" class="ga-form-label">Phone Number</label>
+                                <input 
+                                    type="tel" 
+                                    id="contactPhone" 
+                                    name="phone" 
+                                    class="ga-form-input"
+                                    autocomplete="tel"
+                                    pattern="[0-9+\-\s()]+">
                             </div>
                             
-                            <div class="form-group">
-                                <label for="subject">Subject *</label>
-                                <select id="subject" name="subject" required>
+                            <div class="ga-form-field">
+                                <label for="subject" class="ga-form-label">Subject *</label>
+                                <select id="subject" name="subject" class="ga-form-select" required aria-required="true">
                                     <option value="">Select a subject</option>
                                     <option value="general">General Inquiry</option>
                                     <option value="exhibition">Exhibition Information</option>
@@ -218,17 +240,26 @@
                                 </select>
                             </div>
                             
-                            <div class="form-group">
-                                <label for="message">Message *</label>
-                                <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+                            <div class="ga-form-field">
+                                <label for="message" class="ga-form-label">Message *</label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    rows="5" 
+                                    class="ga-form-textarea"
+                                    minlength="10"
+                                    required
+                                    aria-required="true"></textarea>
                             </div>
                             
-                            <div class="form-group-checkbox">
-                                <input type="checkbox" id="copyMe" name="copy" value="yes">
-                                <label for="copyMe">Send me a copy of this message</label>
-                            </div>
+                            <!-- Hidden timestamp field -->
+                            <input 
+                                type="hidden" 
+                                id="contactTimestamp" 
+                                name="timestamp" 
+                                value="">
                             
-                            <button type="submit" class="btn btn-primary">Send Message</button>
+                            <button type="submit" class="ga-button ga-button--primary">Send Message</button>
                         </form>
                     </div>
                 </div>

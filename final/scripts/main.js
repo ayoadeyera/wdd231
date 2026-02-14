@@ -27,6 +27,16 @@ async function init() {
     
     // Check for returning visitor
     handleReturningVisitor();
+
+
+    // Setup contact form
+    setupContactForm();
+    
+    // Add timestamp to contact form
+    initContactTimestamp();
+    
+    // Add scroll animations
+    addScrollAnimations();
 }
 
 
