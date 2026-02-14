@@ -212,14 +212,14 @@
     }
     
     .exhibition-badge.featured {
-        background-color: var(--color-highlight); /* Now points to #A13C1C */
+        background-color: var(--color-highlight); 
     color: var(--color-pure-white);
     }
     
 
 
     /* === NEWSLETTER FORM === */
-/* Single column layout - accessibility best practice */
+/* Single column layout*/
 .newsletter-form {
     display: flex;
     flex-direction: column;
@@ -256,7 +256,7 @@
 }
     
    /* === CONTACT FORM === */
-/* Single column layout - accessibility best practice */
+/* Single column layout */
 .contact-form {
     display: flex;
     flex-direction: column;

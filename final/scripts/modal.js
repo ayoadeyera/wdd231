@@ -100,7 +100,7 @@ export class Modal {
 }
 
 /**
- * Create event registration modal content
+ * event registration modal content
  * @param {string} eventType - Type of event
  * @returns {string} HTML content for modal
  */

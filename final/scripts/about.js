@@ -29,8 +29,7 @@ function setupContactForm() {
     if (!form) return;
     
     form.addEventListener('submit', (e) => {
-        // Form will submit to form-handler.html via GET
-        // Additional validation can be added here
+        
         console.log('Contact form submitted');
     });
     
@@ -56,7 +55,7 @@ function initContactTimestamp() {
     }
 }
 
-    // Add real-time validation
+    // real-time validation
     const emailInput = form.querySelector('#contactEmail');
     if (emailInput) {
         emailInput.addEventListener('blur', validateEmail);
@@ -111,7 +110,7 @@ function validatePhone(e) {
 }
 
 /**
- * Check if phone is valid (basic validation)
+ * Check if phone is valid
  * @param {string} phone - Phone to validate
  * @returns {boolean} True if valid
  */

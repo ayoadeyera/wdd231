@@ -349,8 +349,8 @@
 
 
 
-/* Replace line 679 with this: */
+/* -- Maybe I will Replace line 679 */
 div.ga-modal__container button.ga-modal__close {
     color: var(--color-primary-text);
-    opacity: 1; /* Ensure it's fully visible */
+    opacity: 1; /* to ensure it's fully visible */
 }

@@ -225,7 +225,7 @@ a.ga-button--small {
     /* Inherit from .ga-button-- variant */
 }
 
-/* Make sure button variants explicitly set color */
+/* To make sure button variants explicitly set color */
 a.ga-button--primary {
     color: var(--color-pure-white);
 }
@@ -328,7 +328,7 @@ option {
 .hero-description {
     font-size: 1rem;
     color: var(--color-secondary-text);
-    /* CONTRAST FIX: Uses accessible gray */
+    /* MY CONTRAST FIX: Uses accessible gray */
     margin-bottom: var(--spacing-md);
     line-height: 1.7;
 }
@@ -363,7 +363,7 @@ option {
 .ga-section-header__subtitle {
     font-size: 1.125rem;
     color: var(--color-secondary-text);
-    /* CONTRAST FIX: Uses accessible gray */
+    /* MYCONTRAST FIX EFFORT: Uses accessible gray */
 }
 
 .ga-section-actions {
@@ -549,15 +549,15 @@ option {
 
 }
 
-/* CONTRAST FIX: Visually hidden labels don't need color (they're hidden) */
+/* CONTRAST FIX: Visually hidden labels don't need color */
 .visually-hidden.ga-form-label {
     color: transparent;
-    /* Prevents contrast calculation issues */
+    
 }
 
 .contact-form .ga-form-label {
     color: var(--color-primary-text);
-    /* For contact form on light background */
+    
 }
 
 .ga-form-input,
@@ -766,7 +766,7 @@ option {
     color: var(--color-shark-black);
 }
 
-/* Ensure all modal content uses proper colors */
+/* To ensure all modal content uses proper colors */
 .ga-modal__container h1,
 .ga-modal__container h2,
 .ga-modal__container h3,

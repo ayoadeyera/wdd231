@@ -46,7 +46,7 @@ animatableElements.forEach(el => {
     observer.observe(el);
 });
 
-// Optional: Add active state to navigation based on scroll position
+// Add active state to navigation based on scroll position
 window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-links a');

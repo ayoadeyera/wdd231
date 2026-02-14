@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <!-- Stylesheet -->
-    <!-- <link rel="stylesheet" href="styles/main.css"> -->
+    
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/navigation.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -51,8 +51,8 @@
             <nav class="main-nav" id="mainNav">
                 <ul class="ga-nav-menu">
                     <li><a href="index.html" class="ga-nav-item">Home</a></li>
-                    <li><a href="exhibitions.html" class="ga-nav-item">Exhibitions</a></li>
-                    <li><a href="about.html" class="ga-nav-item ga-nav-item--active" aria-current="page">About</a></li>
+                    <li><a href="exhibitions.html" class="ga-nav-item ga-nav-item--active">Exhibitions</a></li>
+                    <li><a href="about.html" class="ga-nav-item ga-nav-item" aria-current="page">About</a></li>
                     <li><a href="index.html#newsletter" class="ga-nav-item ga-nav-item--highlight">Newsletter</a></li>
                 </ul>
             </nav>
@@ -190,7 +190,7 @@
                     
                     <div class="contact-form-wrapper">
                         <h3>Send Us a Message</h3>
-                        <form class="contact-form" id="contactForm" action="form-handler.html" method="GET">
+                        <form class="contact-form" id="contactForm" method="GET">
                             <div class="ga-form-field">
                                 <label for="contactName" class="ga-form-label">Name *</label>
                                 <input type="text" id="contactName" name="name" class="ga-form-input" required>
@@ -277,7 +277,6 @@
         </div>
     </footer>
 
-    <!-- Modal Dialog for Exhibition Details -->
     <!-- Modal Dialog for Exhibition Details -->
 <div class="ga-modal" id="exhibitionModal" role="dialog" aria-labelledby="exhibitionModalTitle" aria-hidden="true">
     <div class="ga-modal__container ga-modal__container--large">

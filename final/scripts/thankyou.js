@@ -36,7 +36,7 @@ function displayFormData() {
         emailElement.textContent = decodeURIComponent(email);
     }
     
-    // Display interests (format the value)
+    // Display interests
     const interestsElement = document.getElementById('displayInterests');
     if (interestsElement && interests) {
         const formattedInterest = formatInterest(interests);
