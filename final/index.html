@@ -197,20 +197,36 @@
                     <h2>Stay Connected</h2>
                     <p>Subscribe to our newsletter for exclusive exhibition previews, artist insights, and upcoming events.</p>
                     
-                    <form class="newsletter-form" id="newsletterForm" action="form-handler.html" method="GET">
+                    <form class="newsletter-form" id="newsletterForm" action="thankyou.html" method="GET">
                         <div class="ga-form-field">
-                            <label for="name" class="visually-hidden ga-form-label">Full Name</label>
-                            <input type="text" id="name" name="name" class="ga-form-input" placeholder="Full Name" required>
+                            <label for="fullname" class="ga-form-label">Full Name</label>
+                            <input 
+                                type="text" 
+                                id="fullname" 
+                                name="fullname" 
+                                class="ga-form-input" 
+                                autocomplete="name"
+                                required
+                                aria-required="true">
                         </div>
                         
                         <div class="ga-form-field">
-                            <label for="email" class="visually-hidden ga-form-label">Email Address</label>
-                            <input type="email" id="email" name="email" class="ga-form-input" placeholder="Email Address" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                            <label for="email" class="ga-form-label">Email Address</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="ga-form-input" 
+                                autocomplete="email"
+                                placeholder="example@email.com"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                required
+                                aria-required="true">
                         </div>
                         
                         <div class="ga-form-field">
                             <label for="interests" class="ga-form-label">Interests</label>
-                            <select id="interests" name="interests" class="ga-form-select" required>
+                            <select id="interests" name="interests" class="ga-form-select" required aria-required="true">
                                 <option value="">Select your interests</option>
                                 <option value="contemporary">Contemporary Art</option>
                                 <option value="abstract">Abstract</option>
@@ -221,12 +237,14 @@
                             </select>
                         </div>
                         
-                        <div class="ga-form-checkbox-group">
-                            <input type="checkbox" id="updates" name="updates" class="ga-form-checkbox" value="yes">
-                            <label for="updates" class="ga-form-checkbox-label">I'd like to receive event invitations and special offers</label>
-                        </div>
+                        <!-- Hidden timestamp field -->
+                        <input 
+                            type="hidden" 
+                            id="timestamp" 
+                            name="timestamp" 
+                            value="">
                         
-                        <button type="submit" class="ga-button ga-button--primary">Subscribe</button>
+                        <button type="submit" class="ga-button ga-button--primary">Subscribe to Newsletter</button>
                     </form>
                 </div>
             </div>

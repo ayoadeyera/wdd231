@@ -29,6 +29,35 @@ async function init() {
     handleReturningVisitor();
 }
 
+
+// Add timestamp to newsletter form
+    initNewsletterTimestamp();
+}
+
+/**
+ * Initialize newsletter form timestamp
+ */
+function initNewsletterTimestamp() {
+    const timestampField = document.getElementById('timestamp');
+    
+    if (timestampField) {
+        const now = new Date();
+        const formattedDate = now.toLocaleString('en-US', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit'
+        });
+        
+        timestampField.value = formattedDate;
+    }
+}
+
+
+
 /**
  * Fetch and display current exhibitions
  */

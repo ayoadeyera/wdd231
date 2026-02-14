@@ -219,25 +219,41 @@
 
 
     /* === NEWSLETTER FORM === */
-    /* .newsletter-form {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: var(--spacing-sm);
-    } */
-    
-    .newsletter-form .ga-form-field:nth-child(1),
-    .newsletter-form .ga-form-field:nth-child(2) {
-        grid-column: span 1;
-    }
-    
-    .newsletter-form .ga-form-field:nth-child(3),
-    .newsletter-form .ga-form-checkbox-group {
-        grid-column: span 2;
-    }
-    
-    .newsletter-form .ga-button {
-        grid-column: span 2;
-    }
+/* Single column layout - accessibility best practice */
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.newsletter-form .ga-form-field {
+    width: 100%;
+}
+
+.newsletter-form .ga-button {
+    width: 100%;
+    margin-top: var(--spacing-sm);
+}
+
+/* Thank you page responsive */
+.thankyou-content h1 {
+    font-size: 3rem;
+}
+
+.thankyou-icon {
+    width: 100px;
+    height: 100px;
+    font-size: 4rem;
+}
+
+.thankyou-actions {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.detail-item {
+    grid-template-columns: 160px 1fr;
+}
     
     /* === CONTACT FORM === */
     .contact-form {
