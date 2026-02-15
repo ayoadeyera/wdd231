@@ -21,6 +21,8 @@ async function init() {
     
     // Load exhibitions
     await loadCurrentExhibitions();
+
+    initNewsletterTimestamp();
     
     // Set up event registration
     setupEventRegistration(eventModal);
@@ -29,8 +31,7 @@ async function init() {
     handleReturningVisitor();
 
 
-    // Setup contact form
-    setupContactForm();
+    
     
     // Add timestamp to contact form
     initContactTimestamp();
