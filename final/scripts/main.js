@@ -33,8 +33,7 @@ async function init() {
 
     
     
-    // Add timestamp to contact form
-    initContactTimestamp();
+   
     
     // Add scroll animations
     addScrollAnimations();
