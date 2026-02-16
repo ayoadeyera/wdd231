@@ -75,7 +75,7 @@ async function loadCurrentExhibitions() {
         grid.innerHTML = '<p style="text-align: center; padding: 2rem;">Loading exhibitions...</p>';
         
         // Fetch data
-        const response = await fetch('data/exhibitions.json');
+        const response = await fetch('data/exhibitionsTESTERROR.json');
         
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
