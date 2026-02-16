@@ -35,11 +35,6 @@ async function init() {
     
    
     
-    // Add scroll animations
-    addScrollAnimations();
-
-
-
 // Add timestamp to newsletter form
     initNewsletterTimestamp();
 }
