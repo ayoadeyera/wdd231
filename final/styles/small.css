@@ -1284,19 +1284,6 @@ option {
 }
 
 /* === EXHIBITION CARDS === */
-.exhibition-card {
-    background-color: var(--color-card-bg);
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: var(--transition);
-    cursor: pointer;
-}
-
-.exhibition-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-}
 
 .exhibition-card.unavailable {
     opacity: 0.6;
